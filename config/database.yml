@@ -1,0 +1,28 @@
+# PostgreSQL. Versions 9.1 and up are supported.
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV['SOCENT_API_DATABASE_HOST'] %>
+  port: <%= ENV['SOCENT_API_DATABASE_PORT'] %>
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: <%= ENV['SOCENT_API_DEVELOPMENT_DATABASE'] %>
+  username: <%= ENV['SOCENT_API_DEVELOPMENT_USER'] %>
+  password: <%= ENV['SOCENT_API_DEVELOPMENT_PASSWORD'] %>
+
+test:
+  <<: *default
+  database: <%= ENV['SOCENT_API_TEST_DATABASE'] %>
+  username: <%= ENV['SOCENT_API_TEST_USER'] %>
+  password: <%= ENV['SOCENT_API_TEST_PASSWORD'] %>
+
+production:
+  <<: *default
+  database: <%= ENV['SOCENT_API_PROD_DATABASE'] %>
+  username: <%= ENV['SOCENT_API_PROD_USER'] %>
+  password: <%= ENV['SOCENT_API_PROD_PASSWORD'] %>
