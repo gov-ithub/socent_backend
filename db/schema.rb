@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161110114548) do
+ActiveRecord::Schema.define(version: 20161110130133) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,21 @@ ActiveRecord::Schema.define(version: 20161110114548) do
     t.string   "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "entrepreneurs", force: :cascade do |t|
+    t.string   "identification_number"
+    t.string   "name"
+    t.string   "card_type"
+    t.string   "card_series"
+    t.string   "card_number"
+    t.string   "issued_by"
+    t.string   "designation"
+    t.text     "proof_of_designation_url"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.index ["identification_number"], name: "index_entrepreneurs_on_identification_number", unique: true, using: :btree
+    t.index ["name"], name: "index_entrepreneurs_on_name", using: :btree
   end
 
   create_table "social_intervention_domain_categories", force: :cascade do |t|

@@ -7,9 +7,16 @@ Rails.application.routes.draw do
       namespace :v1 do
         resources :districts, only: [:index, :show]
         resources :caens, only: [:index, :show]
-        resources :enterprise_categories, only: [:index, :show]
-        resources :social_intervention_domain_categories, only: [:index, :show]
-        resources :social_intervention_domains, only: [:index, :show]
+        resources :enterprise_categories,
+            only: [:index, :show],
+            path: 'enterprise-categories'
+        resources :social_intervention_domain_categories,
+            only: [:index, :show],
+            path: 'social-intervention-domain-categories'
+        resources :social_intervention_domains,
+            only: [:index, :show],
+            path: 'social-intervention-domains'
+        resources :entrepreneurs, only: [:index, :show]
       end
     end
   end
