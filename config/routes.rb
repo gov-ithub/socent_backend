@@ -8,6 +8,7 @@ Rails.application.routes.draw do
         resources :districts, only: [:index, :show]
         resources :caens, only: [:index, :show]
         resources :enterprise_categories, only: [:index, :show]
+        resources :social_intervention_domain_categories, only: [:index, :show]
       end
     end
   end

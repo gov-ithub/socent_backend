@@ -1,0 +1,2 @@
+class SocialInterventionDomainCategory < ApplicationRecord
+end
