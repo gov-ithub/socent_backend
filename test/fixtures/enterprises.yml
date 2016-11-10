@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: One
+  name: SC Societatea Comerciala SRL
+  tax_registration_code: CUI-0
+  founded_at: 2016-11-10
+  primary_caen: one
+  secondary_caens: [two, three]
+  social_intervention_domain: one
+  enterprise_category: one
+  contact_name: Johann Strauss
+  entrepreneur: one
+
+two:
+  number: two
+  name: Ion Ionut Ionel PFA
+  tax_registration_code: CUJ-1
+  founded_at: 2016-11-10
+  primary_caen: two
+  secondary_caens: [four, five]
+  social_intervention_domain: two
+  enterprise_category: two
+  contact_name: We'll contact you
+  entrepreneur: two
