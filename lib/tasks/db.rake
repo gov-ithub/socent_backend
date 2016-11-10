@@ -35,7 +35,7 @@ namespace :db do
 
   def truncate_table(table_name)
     quoted = connection.quote_table_name(table_name)
-    connection.execute("TRUNCATE TABLE #{quoted}")
+    connection.execute("TRUNCATE TABLE #{quoted} CASCADE")
   end
 
   def connection

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: I say, jolly black dog you spot there, g`vnor
+  social_intervention_domain_category: one
+
+two:
+  description: Oh my! It moved!
+  social_intervention_domain_category: two
