@@ -36,9 +36,10 @@ ActiveRecord::Schema.define(version: 20161110134737) do
   end
 
   create_table "enterprises", force: :cascade do |t|
-    t.string   "number"
-    t.string   "name"
+    t.string   "number",                                    null: false
+    t.string   "name",                                      null: false
     t.string   "tax_registration_code"
+    t.date     "application_date",                          null: false
     t.date     "founded_at"
     t.integer  "primary_caen_id"
     t.string   "secondary_caens",                                        array: true

@@ -1,9 +1,10 @@
 class CreateEnterprises < ActiveRecord::Migration[5.0]
   def change
     create_table :enterprises do |t|
-      t.string :number
-      t.string :name
+      t.string :number, null: false
+      t.string :name, null: false
       t.string :tax_registration_code
+      t.date :application_date, null: false
       t.date :founded_at
       t.references :primary_caen,
           foreign_key: {to_table: :caens}

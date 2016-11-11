@@ -3,6 +3,7 @@
 one:
   number: One
   name: SC Societatea Comerciala SRL
+  application_date: 2016-11-10
   tax_registration_code: CUI-0
   founded_at: 2016-11-10
   primary_caen: one
@@ -15,6 +16,7 @@ one:
 two:
   number: two
   name: Ion Ionut Ionel PFA
+  application_date: 2016-11-09
   tax_registration_code: CUJ-1
   founded_at: 2016-11-10
   primary_caen: two

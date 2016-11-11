@@ -2,6 +2,7 @@ class EnterpriseSerializer < ActiveModel::Serializer
   attributes :id,
       :number,
       :name,
+      :application_date,
       :tax_registration_code,
       :founded_at,
       :secondary_caens,
