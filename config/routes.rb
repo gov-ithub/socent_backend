@@ -6,7 +6,9 @@ Rails.application.routes.draw do
     namespace :api do
       namespace :v1 do
         resources :districts, only: [:index, :show]
-        resources :caens, only: [:index, :show]
+        resources :industry_classifications,
+            only: [:index, :show],
+            path: 'industry-classifications'
         resources :enterprise_categories,
             only: [:index, :show],
             path: 'enterprise-categories'

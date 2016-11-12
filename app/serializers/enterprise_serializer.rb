@@ -5,11 +5,11 @@ class EnterpriseSerializer < ActiveModel::Serializer
       :application_date,
       :tax_registration_code,
       :founded_at,
-      :secondary_caens,
+      :secondary_industry_classifications,
       :contact_name
 
   has_one :entrepreneur
-  has_one :primary_caen
+  has_one :primary_industry_classification
   has_one :enterprise_category
   has_one :social_intervention_domain
 end

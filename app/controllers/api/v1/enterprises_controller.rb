@@ -9,7 +9,7 @@ class Api::V1::EnterprisesController < ApplicationController
 
   def index
     respond_with Enterprise.all.includes(
-        :primary_caen,
+        :primary_industry_classification,
         :enterprise_category,
         :entrepreneur,
         :social_intervention_domain)
@@ -47,10 +47,10 @@ class Api::V1::EnterprisesController < ApplicationController
         :founded_at,
         :contact_name,
         :entrepreneur_id,
-        :primary_caen_id,
+        :primary_industry_classification_id,
         :enterprise_category_id,
         :social_intervention_domain_id,
-        :caens)
+        :industry_classifications)
   end
 
   def update_params
@@ -60,10 +60,10 @@ class Api::V1::EnterprisesController < ApplicationController
         :founded_at,
         :contact_name,
         :entrepreneur_id,
-        :primary_caen_id,
+        :primary_industry_classification_id,
         :enterprise_category_id,
         :social_intervention_domain_id,
-        :caens)
+        :industry_classifications)
   end
 
   def set_enterprise
