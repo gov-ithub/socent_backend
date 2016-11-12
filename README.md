@@ -1,24 +1,20 @@
-# README
+# Registrul Unic de Evidenta a Intreprinderilor Sociale - BackEnd
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Instalare
 
-Things you may want to cover:
+Aplicația se conectează la o bază de date [PostgreSQL](https://www.postgresql.org/download/).
+Fișierul `.env.sample` conține un exemplu de configurare. El trebuie redenumit in `.env`
+```
+cp .env.sample .env
+```
+Presupunând că postgresql e instalat, și userul `postgres` există, e nevoie de un user specific aplicației.
 
-* Ruby version
+```
+sudo -u postgres createuser -s -P socent # Introdu parola 'socent'
+```
+Apoi inițializează baza de date
+```
+rails db:setup
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**Made with :heart: by [GovITHub](http://ithub.gov.ro)**

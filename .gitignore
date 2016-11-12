@@ -18,7 +18,8 @@
 *.csv
 
 #ignore dot-env files
-.env.*
+.env*
+!.env.sample
 
 # Ignore Byebug command history file.
 .byebug_history
