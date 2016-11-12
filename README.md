@@ -1,5 +1,7 @@
 # Registrul Unic de Evidenta a Intreprinderilor Sociale - BackEnd
 
+[![Travis build](https://travis-ci.org/gov-ithub/socent_backend.svg?branch=master)](https://travis-ci.org/gov-ithub/socent_backend)
+
 # Instalare
 
 Aplicația se conectează la o bază de date [PostgreSQL](https://www.postgresql.org/download/).
