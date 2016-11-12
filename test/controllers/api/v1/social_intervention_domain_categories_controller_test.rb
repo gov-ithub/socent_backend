@@ -2,12 +2,13 @@ require 'test_helper'
 
 class Api::V1::SocialInterventionDomainCategoriesControllerTest < ActionDispatch::IntegrationTest
   test "should get show" do
-    get api_v1_social_intervention_domain_categories_show_url
+    sidc = social_intervention_domain_categories(:one)
+    get api_v1_social_intervention_domain_category_url(sidc)
     assert_response :success
   end
 
   test "should get index" do
-    get api_v1_social_intervention_domain_categories_index_url
+    get api_v1_social_intervention_domain_categories_url
     assert_response :success
   end
 
