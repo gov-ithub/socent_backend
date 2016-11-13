@@ -1,5 +1,5 @@
 class Enterprise < ApplicationRecord
-  belongs_to :primary_caen, class_name: 'Caen', optional: true
+  belongs_to :primary_industry_classification, class_name: 'IndustryClassification', optional: true
   belongs_to :social_intervention_domain, optional: true
   belongs_to :enterprise_category, optional: true
   belongs_to :entrepreneur, optional: true

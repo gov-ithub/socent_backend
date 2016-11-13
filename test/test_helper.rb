@@ -22,7 +22,7 @@ class ActiveRecord::FixtureSet
     # doesn't break referential integrity.
     Enterprise.delete_all
     Entrepreneur.delete_all
-    Caen.delete_all
+    IndustryClassification.delete_all
     EnterpriseCategory.delete_all
     SocialInterventionDomain.delete_all
     SocialInterventionDomainCategory.delete_all

@@ -6,9 +6,9 @@ class CreateEnterprises < ActiveRecord::Migration[5.0]
       t.string :tax_registration_code
       t.date :application_date, null: false
       t.date :founded_at
-      t.references :primary_caen,
-          foreign_key: {to_table: :caens}
-      t.string :secondary_caens, array: true
+      t.references :primary_industry_classification,
+          foreign_key: {to_table: :industry_classifications}
+      t.string :secondary_industry_classifications, array: true
       t.references :social_intervention_domain, foreign_key: true
       t.references :enterprise_category, foreign_key: true
       t.string :contact_name
