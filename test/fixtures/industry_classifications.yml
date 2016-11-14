@@ -1,9 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  code: CAEN1
-  description: Lorem
+  :section: A
+  :division: '01'
+  :group: '011'
+  :clasz: '0111'
+  :description: Cultivarea cerealelor (exclusiv orez), plantelor leguminoase și a plantelor producătoare de semințe oleaginoase
 
 two:
-  code: CAEN2
-  description: Ipsum
+  :section: A
+  :division: '01'
+  :group: '011'
+  :clasz: '0112'
+  :description: Cultivarea orezului
