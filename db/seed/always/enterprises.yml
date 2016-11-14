@@ -6,8 +6,8 @@ one:
   application_date: 2016-11-10
   tax_registration_code: CUI-0
   founded_at: 2016-11-10
-  primary_industry_classification: one
-  secondary_industry_classifications: [two, three]
+  primary_industry_classification: clasz_0111
+  secondary_industry_classifications: [0113, 0115]
   social_intervention_domain: one
   enterprise_category: one
   contact_name: Johann Strauss
@@ -19,8 +19,8 @@ two:
   application_date: 2016-11-09
   tax_registration_code: CUJ-1
   founded_at: 2016-11-10
-  primary_industry_classification: two
-  secondary_industry_classifications: [four, five]
+  primary_industry_classification: clasz_0114
+  secondary_industry_classifications: [0124, 0125]
   social_intervention_domain: two
   enterprise_category: two
   contact_name: We'll contact you
