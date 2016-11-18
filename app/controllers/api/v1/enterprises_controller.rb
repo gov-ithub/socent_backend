@@ -1,4 +1,7 @@
 class Api::V1::EnterprisesController < ApplicationController
+  include OrganizationScopedController
+  organization_scoped
+
   respond_to :json
 
   before_action :set_enterprise, only: [:show, :destroy, :update]

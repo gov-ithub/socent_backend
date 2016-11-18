@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161110134737) do
+=======
+ActiveRecord::Schema.define(version: 20161118090149) do
+>>>>>>> origin/organizations
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,13 +44,25 @@ ActiveRecord::Schema.define(version: 20161110134737) do
     t.integer  "enterprise_category_id"
     t.string   "contact_name"
     t.integer  "entrepreneur_id"
+<<<<<<< HEAD
     t.integer  "status",                                default: 0, null: false
     t.datetime "created_at",                                        null: false
     t.datetime "updated_at",                                        null: false
+=======
+    t.integer  "status",                             default: 0, null: false
+    t.datetime "created_at",                                     null: false
+    t.datetime "updated_at",                                     null: false
+    t.integer  "organization_id"
+>>>>>>> origin/organizations
     t.index ["enterprise_category_id"], name: "index_enterprises_on_enterprise_category_id", using: :btree
     t.index ["entrepreneur_id"], name: "index_enterprises_on_entrepreneur_id", using: :btree
     t.index ["name"], name: "index_enterprises_on_name", using: :btree
     t.index ["number"], name: "index_enterprises_on_number", unique: true, using: :btree
+<<<<<<< HEAD
+=======
+    t.index ["organization_id"], name: "index_enterprises_on_organization_id", using: :btree
+    t.index ["primary_industry_classification_id"], name: "index_enterprises_on_primary_industry_classification_id", using: :btree
+>>>>>>> origin/organizations
     t.index ["social_intervention_domain_id"], name: "index_enterprises_on_social_intervention_domain_id", using: :btree
     t.index ["tax_registration_code"], name: "index_enterprises_on_tax_registration_code", using: :btree
   end
@@ -58,6 +74,7 @@ ActiveRecord::Schema.define(version: 20161110134737) do
     t.string   "card_series"
     t.string   "card_number"
     t.string   "issued_by"
+    t.date     "issued_at"
     t.string   "designation"
     t.text     "proof_of_designation_url"
     t.datetime "created_at",               null: false
@@ -75,6 +92,13 @@ ActiveRecord::Schema.define(version: 20161110134737) do
     t.datetime "updated_at",  null: false
   end
 
+  create_table "organizations", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_organizations_on_name", unique: true, using: :btree
+  end
+
   create_table "social_intervention_domain_categories", force: :cascade do |t|
     t.string   "description"
     t.datetime "created_at",  null: false
@@ -89,9 +113,22 @@ ActiveRecord::Schema.define(version: 20161110134737) do
     t.index ["social_intervention_domain_category_id"], name: "social_intervention_domains_category_id", using: :btree
   end
 
+  create_table "users", force: :cascade do |t|
+    t.string   "email"
+    t.binary   "password_hash"
+    t.binary   "password_salt"
+    t.integer  "organization_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["organization_id"], name: "index_users_on_organization_id", using: :btree
+  end
+
   add_foreign_key "enterprises", "enterprise_categories"
   add_foreign_key "enterprises", "entrepreneurs"
   add_foreign_key "enterprises", "industry_classifications", column: "primary_industry_classification_clasz", primary_key: "clasz"
+  add_foreign_key "enterprises", "organizations"
   add_foreign_key "enterprises", "social_intervention_domains"
   add_foreign_key "social_intervention_domains", "social_intervention_domain_categories"
+  add_foreign_key "users", "organizations"
 end
