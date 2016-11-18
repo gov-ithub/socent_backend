@@ -6,8 +6,7 @@ class CreateEnterprises < ActiveRecord::Migration[5.0]
       t.string :tax_registration_code
       t.date :application_date, null: false
       t.date :founded_at
-      t.references :primary_industry_classification,
-          foreign_key: {to_table: :industry_classifications}
+      t.string :primary_industry_classification_clasz
       t.string :secondary_industry_classifications, array: true
       t.references :social_intervention_domain, foreign_key: true
       t.references :enterprise_category, foreign_key: true
@@ -17,6 +16,10 @@ class CreateEnterprises < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
+
+    add_foreign_key :enterprises, :industry_classifications,
+        column: :primary_industry_classification_clasz,
+        primary_key: :clasz
     add_index :enterprises, :number, unique: true
     add_index :enterprises, :name
     add_index :enterprises, :tax_registration_code

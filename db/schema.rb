@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161113092642) do
+ActiveRecord::Schema.define(version: 20161110134737) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,25 +29,24 @@ ActiveRecord::Schema.define(version: 20161113092642) do
   end
 
   create_table "enterprises", force: :cascade do |t|
-    t.string   "number",                                         null: false
-    t.string   "name",                                           null: false
+    t.string   "number",                                            null: false
+    t.string   "name",                                              null: false
     t.string   "tax_registration_code"
-    t.date     "application_date",                               null: false
+    t.date     "application_date",                                  null: false
     t.date     "founded_at"
-    t.integer  "primary_industry_classification_id"
-    t.string   "secondary_industry_classifications",                          array: true
+    t.string   "primary_industry_classification_clasz"
+    t.string   "secondary_industry_classifications",                             array: true
     t.integer  "social_intervention_domain_id"
     t.integer  "enterprise_category_id"
     t.string   "contact_name"
     t.integer  "entrepreneur_id"
-    t.integer  "status",                             default: 0, null: false
-    t.datetime "created_at",                                     null: false
-    t.datetime "updated_at",                                     null: false
+    t.integer  "status",                                default: 0, null: false
+    t.datetime "created_at",                                        null: false
+    t.datetime "updated_at",                                        null: false
     t.index ["enterprise_category_id"], name: "index_enterprises_on_enterprise_category_id", using: :btree
     t.index ["entrepreneur_id"], name: "index_enterprises_on_entrepreneur_id", using: :btree
     t.index ["name"], name: "index_enterprises_on_name", using: :btree
     t.index ["number"], name: "index_enterprises_on_number", unique: true, using: :btree
-    t.index ["primary_industry_classification_id"], name: "index_enterprises_on_primary_industry_classification_id", using: :btree
     t.index ["social_intervention_domain_id"], name: "index_enterprises_on_social_intervention_domain_id", using: :btree
     t.index ["tax_registration_code"], name: "index_enterprises_on_tax_registration_code", using: :btree
   end
@@ -67,14 +66,13 @@ ActiveRecord::Schema.define(version: 20161113092642) do
     t.index ["name"], name: "index_entrepreneurs_on_name", using: :btree
   end
 
-  create_table "industry_classifications", force: :cascade do |t|
-    t.string   "clasz"
-    t.string   "description"
+  create_table "industry_classifications", primary_key: "clasz", id: :string, force: :cascade do |t|
+    t.string   "section",     null: false
+    t.string   "division",    null: false
+    t.string   "group",       null: false
+    t.string   "description", null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "section"
-    t.string   "division"
-    t.string   "group"
   end
 
   create_table "social_intervention_domain_categories", force: :cascade do |t|
@@ -93,7 +91,7 @@ ActiveRecord::Schema.define(version: 20161113092642) do
 
   add_foreign_key "enterprises", "enterprise_categories"
   add_foreign_key "enterprises", "entrepreneurs"
-  add_foreign_key "enterprises", "industry_classifications", column: "primary_industry_classification_id"
+  add_foreign_key "enterprises", "industry_classifications", column: "primary_industry_classification_clasz", primary_key: "clasz"
   add_foreign_key "enterprises", "social_intervention_domains"
   add_foreign_key "social_intervention_domains", "social_intervention_domain_categories"
 end
