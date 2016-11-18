@@ -1,3 +1,3 @@
 class IndustryClassificationSerializer < ActiveModel::Serializer
-  attributes :id, :section, :division, :group, :clasz, :description   
+  attributes :clasz, :section, :division, :group, :clasz, :description   
 end

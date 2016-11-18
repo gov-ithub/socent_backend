@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20161110134737) do
-=======
 ActiveRecord::Schema.define(version: 20161118090149) do
->>>>>>> origin/organizations
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,25 +40,15 @@ ActiveRecord::Schema.define(version: 20161118090149) do
     t.integer  "enterprise_category_id"
     t.string   "contact_name"
     t.integer  "entrepreneur_id"
-<<<<<<< HEAD
     t.integer  "status",                                default: 0, null: false
     t.datetime "created_at",                                        null: false
     t.datetime "updated_at",                                        null: false
-=======
-    t.integer  "status",                             default: 0, null: false
-    t.datetime "created_at",                                     null: false
-    t.datetime "updated_at",                                     null: false
     t.integer  "organization_id"
->>>>>>> origin/organizations
     t.index ["enterprise_category_id"], name: "index_enterprises_on_enterprise_category_id", using: :btree
     t.index ["entrepreneur_id"], name: "index_enterprises_on_entrepreneur_id", using: :btree
     t.index ["name"], name: "index_enterprises_on_name", using: :btree
     t.index ["number"], name: "index_enterprises_on_number", unique: true, using: :btree
-<<<<<<< HEAD
-=======
     t.index ["organization_id"], name: "index_enterprises_on_organization_id", using: :btree
-    t.index ["primary_industry_classification_id"], name: "index_enterprises_on_primary_industry_classification_id", using: :btree
->>>>>>> origin/organizations
     t.index ["social_intervention_domain_id"], name: "index_enterprises_on_social_intervention_domain_id", using: :btree
     t.index ["tax_registration_code"], name: "index_enterprises_on_tax_registration_code", using: :btree
   end
