@@ -9,6 +9,7 @@ module TableOrderConcern
     SocialInterventionDomain,
     SocialInterventionDomainCategory,
     User,
-    Organization]
+    Organization,
+    District]
 
 end
