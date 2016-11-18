@@ -21,6 +21,7 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'knock', '~> 1.4.2'
 gem 'active_model_serializers', git: 'https://github.com/rails-api/active_model_serializers.git'
 gem 'responders', '~> 2.0'
+gem 'email_validator'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

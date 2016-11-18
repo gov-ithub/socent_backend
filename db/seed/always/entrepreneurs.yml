@@ -7,6 +7,7 @@ one:
   card_series: T
   card_number: 70
   issued_by: SkyNet
+  issued_at: <%= 1.year.ago.to_date %>
   designation: Hunter-Killer
   proof_of_designation_url: 
 
@@ -17,5 +18,6 @@ two:
   card_series: 9
   card_number: last one
   issued_by: Linda
+  issued_at: <%= Date.today %>
   designation: darling
   proof_of_designation_url: 

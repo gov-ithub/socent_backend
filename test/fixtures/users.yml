@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+<% require 'openssl' %>
+
+one:
+  email: one@example.com
+  password_salt: 01234567
+  password_hash: <%= OpenSSL::Digest::SHA256.hexdigest('socent.01234567.one') %>
+  organization: alba
+
+two:
+  email: two@example.com
+  password_salt: 01234567
+  password_hash: <%= OpenSSL::Digest::SHA256.hexdigest('socent.01234567.two') %>
+  organization: bucuresti
+

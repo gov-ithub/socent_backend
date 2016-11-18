@@ -6,6 +6,7 @@ class EntrepreneurSerializer < ActiveModel::Serializer
     :card_series,
     :card_number,
     :issued_by,
+    :issued_at,
     :designation,
     :proof_of_designation_url
 end

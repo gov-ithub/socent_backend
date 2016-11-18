@@ -20,19 +20,14 @@ class ActiveRecord::FixtureSet
   def self.create_fixtures f_dir, fs_names, *args
     # Delete all fixtures that have foreign keys, in an order that
     # doesn't break referential integrity.
-    Enterprise.delete_all
-    Entrepreneur.delete_all
-    IndustryClassification.delete_all
-    EnterpriseCategory.delete_all
-    SocialInterventionDomain.delete_all
-    SocialInterventionDomainCategory.delete_all
+
+    TableOrderConcern::TABLE_ORDER.each do |t|
+      t.delete_all
+    end
 
     reset_cache
 
-    # If we're adding any {user, group} fixtures, add them [a] in that
-    # order, [b] before adding any other fixtures which might have
-    # references to them.
-    fs_names = %w(users groups) & fs_names | fs_names
+    fs_names = %w(organizations users groups) & fs_names | fs_names
 
     orig_create_fixtures f_dir, fs_names, *args
   end

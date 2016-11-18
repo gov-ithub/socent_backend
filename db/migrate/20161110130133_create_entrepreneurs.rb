@@ -7,6 +7,7 @@ class CreateEntrepreneurs < ActiveRecord::Migration[5.0]
       t.string :card_series
       t.string :card_number
       t.string :issued_by
+      t.date :issued_at
       t.string :designation
       t.text :proof_of_designation_url
 

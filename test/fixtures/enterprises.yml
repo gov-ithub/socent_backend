@@ -12,6 +12,7 @@ one:
   enterprise_category: one
   contact_name: Johann Strauss
   entrepreneur: one
+  organization: alba
 
 two:
   number: two
@@ -25,3 +26,4 @@ two:
   enterprise_category: two
   contact_name: We'll contact you
   entrepreneur: two
+  organization: bucuresti
