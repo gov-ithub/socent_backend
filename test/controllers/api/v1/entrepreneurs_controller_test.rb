@@ -12,4 +12,11 @@ class Api::V1::EntrepreneursControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should post create" do
+    assert_difference 'Entrepreneur.count' do
+      post api_v1_entrepreneurs_url, params: { name: 'foo' }
+      assert_response :created
+    end
+  end
+
 end
