@@ -6,6 +6,6 @@ class Api::V1::SocialInterventionDomainsController < ApplicationController
   end
 
   def index
-    respond_with SocialInterventionDomain.all
+    respond_with SocialInterventionDomain.all.includes(:social_intervention_domain_category)
   end
 end
