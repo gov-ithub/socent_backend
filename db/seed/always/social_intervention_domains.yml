@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 media:
   description: Media și comunicare
-  social_intervention_domain_category_id: culture_arts_sports
+  social_intervention_domain_category: culture_arts_sports
 
 visual_arts_architecture_artisans:
   description: Arte vizuale, arhitectură, meșteșuguri și artizanat
