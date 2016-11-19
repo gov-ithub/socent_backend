@@ -29,4 +29,12 @@ class Api::V1::EntrepreneursControllerTest < ActionDispatch::IntegrationTest
     end
   end
 
+  test "should delete destroy" do
+    entrepreneur = entrepreneurs(:one)
+    assert_difference 'Entrepreneur.count', -1 do
+      delete api_v1_entrepreneur_url(entrepreneur)
+      assert_response :no_content
+    end
+  end
+
 end

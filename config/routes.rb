@@ -19,7 +19,7 @@ Rails.application.routes.draw do
             only: [:index, :show],
             path: 'social-intervention-domains'
 
-        resources :entrepreneurs, only: [:index, :show, :create, :update]
+        resources :entrepreneurs, only: [:index, :show, :create, :update, :destroy]
 
         resources :enterprises, only: [:index, :show, :create, :destroy, :update]
       end

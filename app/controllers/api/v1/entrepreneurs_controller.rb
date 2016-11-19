@@ -1,7 +1,7 @@
 class Api::V1::EntrepreneursController < ApplicationController
   respond_to :json
 
-  before_action :set_entrepreneur, only: [:show, :update]
+  before_action :set_entrepreneur, only: [:show, :update, :destroy]
 
   def show
     respond_with @entrepreneur
@@ -19,6 +19,11 @@ class Api::V1::EntrepreneursController < ApplicationController
   def update
     @entrepreneur.update(update_params)
     respond_with @entrepreneur
+  end
+
+  def destroy
+    @entrepreneur.destroy
+    head :no_content
   end
 
   # location response wants 'entrepreneur' path helpers
