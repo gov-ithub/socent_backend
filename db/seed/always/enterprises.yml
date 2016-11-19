@@ -8,7 +8,7 @@ one:
   founded_at: 2016-11-10
   primary_industry_classification_clasz: '0111'
   secondary_industry_classifications: ['0113', '0115']
-  social_intervention_domain: one
+  social_intervention_domain: media
   enterprise_category: one
   contact_name: Johann Strauss
   entrepreneur: one
@@ -22,7 +22,7 @@ two:
   founded_at: 2016-11-10
   primary_industry_classification_clasz: '0114'
   secondary_industry_classifications: ['0124', '0125']
-  social_intervention_domain: two
+  social_intervention_domain: history
   enterprise_category: two
   contact_name: We'll contact you
   entrepreneur: two

@@ -1,7 +1,40 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+culture_arts_sports:
+  description: CULTURĂ, ARTĂ, SPORT, RECREERE
 
-one:
-  description: This is an intervention
+education_research:
+  description: ÎNVĂŢĂMÂNT, EDUCAŢIE, CERCETARE
 
-two:
-  description: We need to talk
+health:
+  description: SĂNĂTATE
+
+social_services:
+  description: SERVICII SOCIALE
+
+environment:
+  description: PROTECŢIA MEDIULUI
+
+social_economic_growth:
+  description: DEZVOLTARE ECONOMICĂ ŞI SOCIALĂ
+
+citizen_rights:
+  description: APĂRAREA DREPTURILOR ŞI PROMOVAREA INTERESELOR CETĂŢENEŞTI
+
+womens_rights_and_gender_equality:
+  description: DREPTURILE FEMEILOR ŞI EGALITATEA DE GEN
+
+philantropy_and_volunteering:
+  description: FILANTROPIE ŞI VOLUNTARIAT
+
+international_cooperation:
+  description: COOPERARE INTERNAŢIONALĂ
+
+business_and_professional_interest:
+  description: REPREZENTAREA INTERESELOR DE AFACERI ŞI PROFESIONALE
+
+religion:
+  description: RELIGIE
+
+other:
+  description: ALTELE
+
