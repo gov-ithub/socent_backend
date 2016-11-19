@@ -1,9 +1,293 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+media:
+  description: Media și comunicare
+  social_intervention_domain_category_id: culture_arts_sports
 
-one:
-  description: I say, jolly black dog you spot there, g`vnor
-  social_intervention_domain_category: one
+visual_arts_architecture_artisans:
+  description: Arte vizuale, arhitectură, meșteșuguri și artizanat
+  social_intervention_domain_category: culture_arts_sports
 
-two:
-  description: Oh my! It moved!
-  social_intervention_domain_category: two
+history:
+  description: Istorie, literatură, științe umaniste
+  social_intervention_domain_category: culture_arts_sports
+
+museums:
+  :description: Muzee
+  social_intervention_domain_category: culture_arts_sports
+
+sports:
+  :description: Sport
+  social_intervention_domain_category: culture_arts_sports
+
+leisure_time_and_tourism:
+  :description: Timp liber, turism
+  social_intervention_domain_category: culture_arts_sports
+
+preschool:
+  description: Învățământ preșcolar
+  social_intervention_domain_category: education_research
+
+primary_school:
+  description: Învățământ primar și gimnazial
+  social_intervention_domain_category: education_research
+
+high_school:
+  description: Învățământ liceal
+  social_intervention_domain_category: education_research
+
+university:
+  description: Învățământ universitar și postuniversitar
+  social_intervention_domain_category: education_research
+
+vocational_schools:
+  description: Școli profesionale și tehnice
+  social_intervention_domain_category: education_research
+
+alternative_education:
+  description: Educație alternativă
+  social_intervention_domain_category: education_research
+
+social_political_science_research:
+  description: Cercetare științe sociale,politici sociale
+  social_intervention_domain_category: education_research
+
+medical_research:
+  description: Cercetare medicală
+  social_intervention_domain_category: education_research
+
+continuing_education:
+  description: Educație permanentă(pt. adulți)
+  social_intervention_domain_category: education_research
+
+science_technology_research:
+  description: Cercetare știință și tehnologie
+  social_intervention_domain_category: education_research
+
+care_rehabilitation:
+  description: Îngrijire-reabilitare
+  social_intervention_domain_category: health
+
+ambulance_treatment:
+  description: Tratament ambulatoriu
+  social_intervention_domain_category: health
+
+hospital_treatment:
+  description: Tratament spitalicesc
+  social_intervention_domain_category: health
+
+mental_health:
+  description: Sănătate mintală
+  social_intervention_domain_category: health
+
+chronic_illness_service:
+  description: Servicii pentru bolnavii cronici
+  social_intervention_domain_category: health
+
+hygiene_public_health:
+  description: Igiena și sănătate publică
+  social_intervention_domain_category: health
+
+health_education:
+  description: Educație și sănătate
+  social_intervention_domain_category: health
+
+crisis_intervention:
+  description: Intervenții în situații de criză
+  social_intervention_domain_category: health
+
+social_services_for_children:
+  description: Pentru copii
+  social_intervention_domain_category: social_services
+
+social_services_for_young:
+  description: Pentru tineri
+  social_intervention_domain_category: social_services
+
+social_services_for_elderly:
+  description: Pentru bătrâni
+  social_intervention_domain_category: social_services
+
+social_services_for_persons_with_disabilities:
+  description: Pentru persoane cu dizabilități
+  social_intervention_domain_category: social_services
+
+social_services_for_families:
+  description: Pentru familii
+  social_intervention_domain_category: social_services
+
+social_services_for_refugees:
+  description: Servicii sociale pentru refugiați
+  social_intervention_domain_category: social_services
+
+social_services_for_the_poor:
+  description: Ajutor material/financiar pentru săraci
+  social_intervention_domain_category: social_services
+
+social_services_for_natural_disasters:
+  description: Servicii în caz de catastrofe naturale/socia
+  social_intervention_domain_category: social_services
+
+pollution_control:
+  description: Combaterea și controlul poluării
+  social_intervention_domain_category: environment
+
+natural_resource_protection:
+  description: Conservare și protecția resurselor naturale
+  social_intervention_domain_category: environment
+
+public_space_cleaning:
+  description: Igienizarea/înfrumusețarea spațiului public
+  social_intervention_domain_category: environment
+
+animal_protection:
+  description: Protecția și îngrijirea animalelor
+  social_intervention_domain_category: environment
+
+natural_reserves:
+  description: Rezervații natural
+  social_intervention_domain_category: environment
+
+economic_infrastructure_growth:
+  description: Dezvoltare economică și infrastructură
+  social_intervention_domain_category: social_economic_growth
+
+social_growth:
+  description: Dezvoltare socială, ameliorare probleme sociale
+  social_intervention_domain_category: social_economic_growth
+
+jobs:
+  description: Locuri de muncă, instruire și asistență
+  social_intervention_domain_category: social_economic_growth
+
+community:
+  description: Dezvoltare comunitară,locală
+  social_intervention_domain_category: social_economic_growth
+
+homes:
+  description: Locuințe
+  social_intervention_domain_category: social_economic_growth
+
+individual_rights:
+  description: Drepturi individuale
+  social_intervention_domain_category: citizen_rights
+
+civil_rights:
+  description: Drepturi civile, educație civică, participare publică
+  social_intervention_domain_category: citizen_rights
+
+legal_services:
+  description: Asistență și servicii juridice
+  social_intervention_domain_category: citizen_rights
+
+supporting_victims:
+  description: Sprijinirea victimelor
+  social_intervention_domain_category: citizen_rights
+
+minority_solidarity:
+  description: Apărarea și promovarea solidarității etnice și a tradiției culturale, minorități
+  social_intervention_domain_category: citizen_rights
+
+consumer_rights:
+  description: Protecția consumatorilor
+  social_intervention_domain_category: citizen_rights
+
+prevention_of_gender_discrimination:
+  description: Prevenirea și combaterea discriminării de gen
+  social_intervention_domain_category: womens_rights_and_gender_equality
+
+integration_gender_equality:
+   description: Integrarea egalității de gen în politici publice
+   social_intervention_domain_category: womens_rights_and_gender_equality
+
+work_gender_equality:
+  description: Egalitatea de gen pe piața muncii
+  social_intervention_domain_category: womens_rights_and_gender_equality
+
+equal_chance_for_public_life:
+  description: Șanse egale de participare a femeilor și bărbaților la viața publică
+  social_intervention_domain_category: womens_rights_and_gender_equality
+
+violence_against_women:
+  description: Violența împotriva femeilor/servicii pt protecția și asistența victimelor violenței
+  social_intervention_domain_category: womens_rights_and_gender_equality
+
+gender_equality_education:
+  description: Educație pentru egalitatea de gen
+  social_intervention_domain_category: womens_rights_and_gender_equality
+
+gender_equality_awareness:
+  description: Campanii de conștientizare a societății în privința egalității de gen
+  social_intervention_domain_category: womens_rights_and_gender_equality
+
+support_women_in_difficulty:
+  description: Servicii pentru sprijinirea femeilor în dificultate
+  social_intervention_domain_category: womens_rights_and_gender_equality
+
+financing_foundations:
+  description: Fundații finanțatoare
+  social_intervention_domain_category: philantropy_and_volunteering
+
+intermediation_of_funds:
+  description: Intermediere de fonduri
+  social_intervention_domain_category: philantropy_and_volunteering
+
+support_and_promote_volunteering:
+  description: Sprijinirea și promovarea voluntariatului
+  social_intervention_domain_category: philantropy_and_volunteering
+
+growth_support:
+  description: Asistență în dezvoltare
+  social_intervention_domain_category: international_cooperation
+
+international_disasters:
+  description: Catastrofe internaționale
+  social_intervention_domain_category: international_cooperation
+
+peace_and_human_rights_promotion:
+  description: Promovarea internațională a păcii și a drepturilor omului
+  social_intervention_domain_category: international_cooperation
+
+cultural_exchange:
+  description: Schimburi culturale și relații de prietenie
+  social_intervention_domain_category: international_cooperation
+
+business_associations:
+  description: Asociații de afaceri și patronale
+  social_intervention_domain_category: business_and_professional_interest
+
+professional_associations:
+  description: Asociații profesionale
+  social_intervention_domain_category: business_and_professional_interest
+
+cults:
+  description:  Culte
+  social_intervention_domain_category: religion
+
+religious_associations:
+  description: Asociații religioase
+  social_intervention_domain_category: religion
+
+renewable_energy:
+  description: ENERGIE REGENERABILA 
+  social_intervention_domain_category: other
+
+human_rights_and_student_interests:
+  description: APĂRAREA DREPTURILOR ȘI PROMOVAREA INTERESELOR STUDENȚEȘTI
+  social_intervention_domain_category: other
+
+inclusive_work:
+  description: EDUCATIE SPECIALA SI INCLUZIVA; MUNCA PROTEJATA SI LA DOMICILIU; PREVENIREA SI COMBATEREA DISCRIMINA
+  social_intervention_domain_category: other
+
+agriculture:
+  description: AGRICULTURA;
+  social_intervention_domain_category: other
+
+food_industry:
+  description: INDUSTRIA ALIMENTARA
+  social_intervention_domain_category: other
+
+other:
+  description: ALTELE
+  social_intervention_domain_category: other
+
