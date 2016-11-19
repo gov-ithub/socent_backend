@@ -19,4 +19,14 @@ class Api::V1::EntrepreneursControllerTest < ActionDispatch::IntegrationTest
     end
   end
 
+  test "should patch update" do
+    entrepreneur = entrepreneurs(:one)
+    assert_no_difference 'Entrepreneur.count' do
+      patch api_v1_entrepreneur_url(entrepreneur), params: { name: 'updated' }
+      assert_response :success
+      entrepreneur.reload
+      assert_equal 'updated', entrepreneur.name
+    end
+  end
+
 end

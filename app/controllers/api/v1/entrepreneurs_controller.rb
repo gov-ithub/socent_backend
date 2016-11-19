@@ -1,8 +1,10 @@
 class Api::V1::EntrepreneursController < ApplicationController
   respond_to :json
 
+  before_action :set_entrepreneur, only: [:show, :update]
+
   def show
-    respond_with Entrepreneur.find params[:id]
+    respond_with @entrepreneur
   end
 
   def index
@@ -12,6 +14,11 @@ class Api::V1::EntrepreneursController < ApplicationController
   def create
     @entrepreneur = Entrepreneur.create(create_params)
     respond_with @entrepreneur, status: :created
+  end
+
+  def update
+    @entrepreneur.update(update_params)
+    respond_with @entrepreneur
   end
 
   # location response wants 'entrepreneur' path helpers
@@ -31,5 +38,21 @@ class Api::V1::EntrepreneursController < ApplicationController
       :issued_by,
       :designation,
       :proof_of_designation_url)
+  end
+
+  def update_params
+    params.permit(
+      :identification_number,
+      :name,
+      :card_type,
+      :card_series,
+      :card_number,
+      :issued_by,
+      :designation,
+      :proof_of_designation_url)
+  end
+
+  def set_entrepreneur
+    @entrepreneur = Entrepreneur.find params[:id]
   end
 end
