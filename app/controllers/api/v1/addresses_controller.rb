@@ -1,12 +1,20 @@
 class Api::V1::AddressesController < ApplicationController
   respond_to :json
+
+  before_action :set_address, only: [:show, :update]
+
   def show
-    respond_with Address.find params[:id]
+    respond_with @address
   end
 
   def create
     @address = Address.create!(create_params)
     respond_with @address, status: :created
+  end
+
+  def update
+    @address.update(update_params)
+    respond_with @address
   end
 
   # location response wants 'address' path helpers
@@ -28,4 +36,19 @@ class Api::V1::AddressesController < ApplicationController
       :website)
   end
 
+  def update_params
+    params.permit(
+      :city,
+      :address,
+      :phone,
+      :zipcode,
+      :district_id,
+      :fax,
+      :email,
+      :website)
+  end
+
+  def set_address
+    @address = Address.find params[:id]
+  end
 end

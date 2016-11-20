@@ -13,4 +13,14 @@ class Api::V1::AddressesControllerTest < ActionDispatch::IntegrationTest
       assert_response :created
     end
   end
+
+  test "should patch update" do
+    address = addresses(:one)
+    assert_no_difference 'Address.count' do
+      patch api_v1_address_url(address), params: { city: 'updated' }
+      assert_response :success
+      address.reload
+      assert_equal 'updated', address.city
+    end
+  end
 end
