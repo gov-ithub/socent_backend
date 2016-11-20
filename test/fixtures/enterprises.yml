@@ -3,13 +3,13 @@
 one:
   number: One
   name: SC Societatea Comerciala SRL
-  tax_registration_code: CUI-0
   application_date: 2016-11-10
+  tax_registration_code: CUI-0
   founded_at: 2016-11-10
-  primary_industry_classification: one
-  secondary_industry_classifications: [two, three]
-  social_intervention_domain: one
-  enterprise_category: one
+  primary_industry_classification_clasz: '0111'
+  secondary_industry_classifications: ['0113', '0115']
+  social_intervention_domain: media
+  enterprise_category: category_0
   contact_name: Johann Strauss
   entrepreneur: one
   organization: alba
@@ -17,13 +17,13 @@ one:
 two:
   number: two
   name: Ion Ionut Ionel PFA
+  application_date: 2016-11-09
   tax_registration_code: CUJ-1
-  application_date: 2016-11-10
   founded_at: 2016-11-10
-  primary_industry_classification: two
-  secondary_industry_classifications: [four, five]
-  social_intervention_domain: two
-  enterprise_category: two
+  primary_industry_classification_clasz: '0114'
+  secondary_industry_classifications: ['0124', '0125']
+  social_intervention_domain: history
+  enterprise_category: category_1
   contact_name: We'll contact you
   entrepreneur: two
   organization: bucuresti

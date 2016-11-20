@@ -5,7 +5,7 @@ module OrganizationScopedModel
     def organization_scoped(opts = {})
       belongs_to :organization, optional: true
       self.default_scope -> { 
-        organization_id = Thread.current[:current_organization_id]
+        organization_id = OrganizationScope.current_organization_id
         organization_id ? self.where(organization_id: organization_id) : self.all
       }
     end

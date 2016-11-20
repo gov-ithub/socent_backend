@@ -7,6 +7,13 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  
+  def with_organization(organization, &block)
+    OrganizationScope.with_organization_id organization.id do
+      yield
+    end
+  end
+
 end
 
 # PSQL FKs require superuser to disable constraints

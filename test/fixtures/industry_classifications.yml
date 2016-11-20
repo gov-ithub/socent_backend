@@ -1,15 +1,3681 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  :section: A
-  :division: '01'
-  :group: '011'
-  :clasz: '0111'
-  :description: Cultivarea cerealelor (exclusiv orez), plantelor leguminoase și a plantelor producătoare de semințe oleaginoase
+clasz_0111:
+  section: A
+  division: '01'
+  group: '011'
+  clasz: '0111'
+  description: Cultivarea cerealelor (exclusiv orez), plantelor leguminoase și a plantelor producătoare de semințe oleaginoase
+clasz_0112:
+  section: A
+  division: '01'
+  group: '011'
+  clasz: '0112'
+  description: Cultivarea orezului
+clasz_0113:
+  section: A
+  division: '01'
+  group: '011'
+  clasz: '0113'
+  description: Cultivarea legumelor și a pepenilor, a rădăcinoaselor și tuberculilor
+clasz_0114:
+  section: A
+  division: '01'
+  group: '011'
+  clasz: '0114'
+  description: Cultivarea trestiei de zahăr
+clasz_0115:
+  section: A
+  division: '01'
+  group: '011'
+  clasz: '0115'
+  description: Cultivarea tutunului
+clasz_0116:
+  section: A
+  division: '01'
+  group: '011'
+  clasz: '0116'
+  description: Cultivarea plantelor pentru fibre textile
+clasz_0119:
+  section: A
+  division: '01'
+  group: '011'
+  clasz: 0119
+  description: Cultivarea altor plante din culturi nepermanente
+clasz_0121:
+  section: A
+  division: '01'
+  group: '012'
+  clasz: '0121'
+  description: Cultivarea strugurilor
+clasz_0122:
+  section: A
+  division: '01'
+  group: '012'
+  clasz: '0122'
+  description: Cultivarea fructelor tropicale și subtropicale
+clasz_0123:
+  section: A
+  division: '01'
+  group: '012'
+  clasz: '0123'
+  description: Cultivarea fructelor citrice
+clasz_0124:
+  section: A
+  division: '01'
+  group: '012'
+  clasz: '0124'
+  description: Cultivarea fructelor semințoase și sâmburoase
+clasz_0125:
+  section: A
+  division: '01'
+  group: '012'
+  clasz: '0125'
+  description: Cultivarea fructelor arbuștilor fructiferi, căpșunilor, nuciferilor și a altor pomi fructiferi
+clasz_0126:
+  section: A
+  division: '01'
+  group: '012'
+  clasz: '0126'
+  description: Cultivarea fructelor oleaginoase
+clasz_0127:
+  section: A
+  division: '01'
+  group: '012'
+  clasz: '0127'
+  description: Cultivarea plantelor pentru prepararea băuturilor
+clasz_0128:
+  section: A
+  division: '01'
+  group: '012'
+  clasz: 0128
+  description: Cultivarea condimentelor, plantelor aromatice, medicinale și a plantelor de uz farmaceutic
+clasz_0129:
+  section: A
+  division: '01'
+  group: '012'
+  clasz: 0129
+  description: Cultivarea altor plante permanente
+clasz_0130:
+  section: A
+  division: '01'
+  group: '013'
+  clasz: '0130'
+  description: Cultivarea plantelor pentru înmulțire
+clasz_0141:
+  section: A
+  division: '01'
+  group: '014'
+  clasz: '0141'
+  description: Creșterea bovinelor de lapte
+clasz_0142:
+  section: A
+  division: '01'
+  group: '014'
+  clasz: '0142'
+  description: Creșterea altor bovine
+clasz_0143:
+  section: A
+  division: '01'
+  group: '014'
+  clasz: '0143'
+  description: Creșterea cailor și a altor cabaline
+clasz_0144:
+  section: A
+  division: '01'
+  group: '014'
+  clasz: '0144'
+  description: Creșterea cămilelor și a camelidelor
+clasz_0145:
+  section: A
+  division: '01'
+  group: '014'
+  clasz: '0145'
+  description: Creșterea ovinelor și caprinelor
+clasz_0146:
+  section: A
+  division: '01'
+  group: '014'
+  clasz: '0146'
+  description: Creșterea porcinelor
+clasz_0147:
+  section: A
+  division: '01'
+  group: '014'
+  clasz: '0147'
+  description: Creșterea păsărilor
+clasz_0149:
+  section: A
+  division: '01'
+  group: '014'
+  clasz: 0149
+  description: Creșterea altor animale vegetală combinată cu creșterea animalelor)
+clasz_0150:
+  section: A
+  division: '01'
+  group: '015'
+  clasz: '0150'
+  description: Activități în ferme mixte (cultura vegetală combinată cu creșterea animalelor)
+clasz_0161:
+  section: A
+  division: '01'
+  group: '016'
+  clasz: '0161'
+  description: Activități auxiliare pentru producția vegetală
+clasz_0162:
+  section: A
+  division: '01'
+  group: '016'
+  clasz: '0162'
+  description: Activități auxiliare pentru creșterea animalelor
+clasz_0163:
+  section: A
+  division: '01'
+  group: '016'
+  clasz: '0163'
+  description: Activități după recoltare
+clasz_0164:
+  section: A
+  division: '01'
+  group: '016'
+  clasz: '0164'
+  description: Pregătirea semințelor
+clasz_0170:
+  section: A
+  division: '01'
+  group: '017'
+  clasz: '0170'
+  description: Vânătoare, capturarea cu capcane a vânatului și activități de servicii anexe vânătorii
+clasz_0210:
+  section: A
+  division: '02'
+  group: '021'
+  clasz: '0210'
+  description: Silvicultură și alte activități forestiere
+clasz_0220:
+  section: A
+  division: '02'
+  group: '022'
+  clasz: '0220'
+  description: Exploatarea forestieră
+clasz_0230:
+  section: A
+  division: '02'
+  group: '023'
+  clasz: '0230'
+  description: Colectarea produselor forestiere nelemnoase din flora spontană
+clasz_0240:
+  section: A
+  division: '02'
+  group: '024'
+  clasz: '0240'
+  description: Activități de servicii anexe silviculturii
+clasz_0311:
+  section: A
+  division: '03'
+  group: '031'
+  clasz: '0311'
+  description: Pescuitul maritim
+clasz_0312:
+  section: A
+  division: '03'
+  group: '031'
+  clasz: '0312'
+  description: Pescuitul în ape dulci
+clasz_0321:
+  section: A
+  division: '03'
+  group: '032'
+  clasz: '0321'
+  description: Acvacultura maritimă
+clasz_0322:
+  section: A
+  division: '03'
+  group: '032'
+  clasz: '0322'
+  description: Acvacultura în ape dulci (PCS =/> 23865 kJ/kg)
+clasz_0510:
+  section: B
+  division: '05'
+  group: '051'
+  clasz: '0510'
+  description: Extracția cărbunelui superior (PCS =/> 23865 kJ/kg) (PCS < 23865 kJ/kg)
+clasz_0520:
+  section: B
+  division: '05'
+  group: '052'
+  clasz: '0520'
+  description: Extracția cărbunelui inferior (PCS < 23865 kJ/kg)
+clasz_0610:
+  section: B
+  division: '06'
+  group: '061'
+  clasz: '0610'
+  description: Extracția petrolului brut
+clasz_0620:
+  section: B
+  division: '06'
+  group: '062'
+  clasz: '0620'
+  description: Extracția gazelor naturale
+clasz_0710:
+  section: B
+  division: '07'
+  group: '071'
+  clasz: '0710'
+  description: Extracția minereurilor feroase
+clasz_0721:
+  section: B
+  division: '07'
+  group: '072'
+  clasz: '0721'
+  description: Extracția minereurilor de uraniu și toriu
+clasz_0729:
+  section: B
+  division: '07'
+  group: '072'
+  clasz: 0729
+  description: Extracția altor minereuri metalifere neferoase
+clasz_0811:
+  section: B
+  division: 08
+  group: 081
+  clasz: 0811
+  description: Extracția pietrei ornamentale și a pietrei pentru construcții, extracția pietrei calcaroase, ghipsului, cretei și a ardeziei
+clasz_0812:
+  section: B
+  division: 08
+  group: 081
+  clasz: 0812
+  description: Extracția pietrișului și nisipului; extracția argilei și caolinului
+clasz_0891:
+  section: B
+  division: 08
+  group: 089
+  clasz: 0891
+  description: Extracția mineralelor pentru industria chimică și a îngrășămintelor naturale
+clasz_0892:
+  section: B
+  division: 08
+  group: 089
+  clasz: 0892
+  description: Extracția turbei
+clasz_0893:
+  section: B
+  division: 08
+  group: 089
+  clasz: 0893
+  description: Extracția sării
+clasz_0899:
+  section: B
+  division: 08
+  group: 089
+  clasz: 0899
+  description: Alte activități extractive n.c.a. extracției extracției petrolului brut și gazelor naturale
+clasz_0910:
+  section: B
+  division: 09
+  group: 091
+  clasz: 0910
+  description: Activități de servicii anexe extracției petrolului brut și gazelor naturale
+clasz_0990:
+  section: B
+  division: 09
+  group: 099
+  clasz: 0990
+  description: Activități de servicii anexe pentru extracția mineralelor
+clasz_1011:
+  section: C
+  division: '10'
+  group: '101'
+  clasz: '1011'
+  description: Prelucrarea și conservarea cărnii
+clasz_1012:
+  section: C
+  division: '10'
+  group: '101'
+  clasz: '1012'
+  description: Prelucrarea și conservarea cărnii de pasăre
+clasz_1013:
+  section: C
+  division: '10'
+  group: '101'
+  clasz: '1013'
+  description: Fabricarea produselor din carne (inclusiv din carne de pasăre)
+clasz_1020:
+  section: C
+  division: '10'
+  group: '102'
+  clasz: '1020'
+  description: Prelucrarea și conservarea peștelui, crustaceelor și moluștelor
+clasz_1031:
+  section: C
+  division: '10'
+  group: '103'
+  clasz: '1031'
+  description: Prelucrarea și conservarea cartofilor
+clasz_1032:
+  section: C
+  division: '10'
+  group: '103'
+  clasz: '1032'
+  description: Fabricarea sucurilor de fructe și legume
+clasz_1039:
+  section: C
+  division: '10'
+  group: '103'
+  clasz: '1039'
+  description: Prelucrarea și conservarea fructelor și legumelor n.c.a.
+clasz_1041:
+  section: C
+  division: '10'
+  group: '104'
+  clasz: '1041'
+  description: Fabricarea uleiurilor și grăsimilor
+clasz_1042:
+  section: C
+  division: '10'
+  group: '104'
+  clasz: '1042'
+  description: Fabricarea margarinei și a altor produse comestibile similare
+clasz_1051:
+  section: C
+  division: '10'
+  group: '105'
+  clasz: '1051'
+  description: Fabricarea produselor lactate și a brânzeturilor
+clasz_1052:
+  section: C
+  division: '10'
+  group: '105'
+  clasz: '1052'
+  description: Fabricarea înghețatei
+clasz_1061:
+  section: C
+  division: '10'
+  group: '106'
+  clasz: '1061'
+  description: Fabricarea produselor de morărit
+clasz_1062:
+  section: C
+  division: '10'
+  group: '106'
+  clasz: '1062'
+  description: Fabricarea amidonului și a produselor din amidon
+clasz_1071:
+  section: C
+  division: '10'
+  group: '107'
+  clasz: '1071'
+  description: Fabricarea pâinii; fabricarea prăjiturilor și a produselor proaspete de patiserie
+clasz_1072:
+  section: C
+  division: '10'
+  group: '107'
+  clasz: '1072'
+  description: Fabricarea biscuiților și pișcoturilor; fabricarea prăjiturilor și a produselor conservate de patiserie
+clasz_1073:
+  section: C
+  division: '10'
+  group: '107'
+  clasz: '1073'
+  description: Fabricarea macaroanelor, tăițeilor, cuș-cuș-ului și a altor produse făinoase similare
+clasz_1081:
+  section: C
+  division: '10'
+  group: '108'
+  clasz: '1081'
+  description: Fabricarea zahărului
+clasz_1082:
+  section: C
+  division: '10'
+  group: '108'
+  clasz: '1082'
+  description: Fabricarea produselor din cacao, a ciocolatei și a produselor zaharoase
+clasz_1083:
+  section: C
+  division: '10'
+  group: '108'
+  clasz: '1083'
+  description: Prelucrarea ceaiului și cafelei
+clasz_1084:
+  section: C
+  division: '10'
+  group: '108'
+  clasz: '1084'
+  description: Fabricarea condimentelor și ingredientelor
+clasz_1085:
+  section: C
+  division: '10'
+  group: '108'
+  clasz: '1085'
+  description: Fabricarea de mâncăruri preparate
+clasz_1086:
+  section: C
+  division: '10'
+  group: '108'
+  clasz: '1086'
+  description: Fabricarea preparatelor alimentare omogenizate și alimentelor dietetice
+clasz_1089:
+  section: C
+  division: '10'
+  group: '108'
+  clasz: '1089'
+  description: Fabricarea altor produse alimentare n.c.a.
+clasz_1091:
+  section: C
+  division: '10'
+  group: '109'
+  clasz: '1091'
+  description: Fabricarea preparatelor pentru hrana animalelor de fermă
+clasz_1092:
+  section: C
+  division: '10'
+  group: '109'
+  clasz: '1092'
+  description: Fabricarea preparatelor pentru hrana animalelor de companie
+clasz_1101:
+  section: C
+  division: '11'
+  group: '110'
+  clasz: '1101'
+  description: Distilarea, rafinarea și mixarea băuturilor alcoolice
+clasz_1102:
+  section: C
+  division: '11'
+  group: '110'
+  clasz: '1102'
+  description: Fabricarea vinurilor din struguri
+clasz_1103:
+  section: C
+  division: '11'
+  group: '110'
+  clasz: '1103'
+  description: Fabricarea cidrului și a altor vinuri din fructe
+clasz_1104:
+  section: C
+  division: '11'
+  group: '110'
+  clasz: '1104'
+  description: Fabricarea altor băuturi nedistilate, obținute prin fermentare
+clasz_1105:
+  section: C
+  division: '11'
+  group: '110'
+  clasz: '1105'
+  description: Fabricarea berii
+clasz_1106:
+  section: C
+  division: '11'
+  group: '110'
+  clasz: '1106'
+  description: Fabricarea malțului
+clasz_1107:
+  section: C
+  division: '11'
+  group: '110'
+  clasz: '1107'
+  description: Producția de băuturi răcoritoare nealcoolice; producția de ape minerale și alte ape îmbuteliate
+clasz_1200:
+  section: C
+  division: '12'
+  group: '120'
+  clasz: '1200'
+  description: Fabricarea produselor din tutun
+clasz_1310:
+  section: C
+  division: '13'
+  group: '131'
+  clasz: '1310'
+  description: Pregătirea fibrelor și filarea fibrelor textile
+clasz_1320:
+  section: C
+  division: '13'
+  group: '132'
+  clasz: '1320'
+  description: Producția de țesături
+clasz_1330:
+  section: C
+  division: '13'
+  group: '133'
+  clasz: '1330'
+  description: Finisarea materialelor textile
+clasz_1391:
+  section: C
+  division: '13'
+  group: '139'
+  clasz: '1391'
+  description: Fabricarea de metraje prin tricotare sau croșetare
+clasz_1392:
+  section: C
+  division: '13'
+  group: '139'
+  clasz: '1392'
+  description: Fabricarea de articole confecționate din textile (cu excepția îmbrăcămintei și lenjeriei de corp)
+clasz_1393:
+  section: C
+  division: '13'
+  group: '139'
+  clasz: '1393'
+  description: Fabricarea de covoare și mochete
+clasz_1394:
+  section: C
+  division: '13'
+  group: '139'
+  clasz: '1394'
+  description: Fabricarea de odgoane, frânghii, sfori și plase
+clasz_1395:
+  section: C
+  division: '13'
+  group: '139'
+  clasz: '1395'
+  description: Fabricarea de textile nețesute și articole din acestea, cu excepția confecțiilor de îmbrăcăminte
+clasz_1396:
+  section: C
+  division: '13'
+  group: '139'
+  clasz: '1396'
+  description: Fabricarea de articole tehnice și industriale din textile
+clasz_1399:
+  section: C
+  division: '13'
+  group: '139'
+  clasz: '1399'
+  description: Fabricarea altor articole textile n.c.a.
+clasz_1411:
+  section: C
+  division: '14'
+  group: '141'
+  clasz: '1411'
+  description: Fabricarea articolelor de îmbrăcăminte din piele
+clasz_1412:
+  section: C
+  division: '14'
+  group: '141'
+  clasz: '1412'
+  description: Fabricarea de articole de îmbrăcăminte pentru lucru
+clasz_1413:
+  section: C
+  division: '14'
+  group: '141'
+  clasz: '1413'
+  description: Fabricarea altor articole de îmbrăcăminte (exclusiv lenjeria de corp)
+clasz_1414:
+  section: C
+  division: '14'
+  group: '141'
+  clasz: '1414'
+  description: Fabricarea de articole de lenjerie de corp
+clasz_1419:
+  section: C
+  division: '14'
+  group: '141'
+  clasz: '1419'
+  description: Fabricarea altor articole de îmbrăcăminte și accesorii n.c.a.
+clasz_1420:
+  section: C
+  division: '14'
+  group: '142'
+  clasz: '1420'
+  description: Fabricarea articolelor din blană
+clasz_1431:
+  section: C
+  division: '14'
+  group: '143'
+  clasz: '1431'
+  description: Fabricarea prin tricotare sau croșetare a ciorapilor și articolelor de galanterie
+clasz_1439:
+  section: C
+  division: '14'
+  group: '143'
+  clasz: '1439'
+  description: Fabricarea prin tricotare sau croșetare a altor articole de îmbrăcăminte prepararea și vopsirea blănurilor
+clasz_1512:
+  section: C
+  division: '15'
+  group: '151'
+  clasz: '1512'
+  description: Fabricarea articolelor de voiaj și marochinărie și a articolelor de harnașament
+clasz_1520:
+  section: C
+  division: '15'
+  group: '152'
+  clasz: '1520'
+  description: Fabricarea încălțămintei
+clasz_1610:
+  section: C
+  division: '16'
+  group: '161'
+  clasz: '1610'
+  description: Tăierea și rindeluirea lemnului
+clasz_1621:
+  section: C
+  division: '16'
+  group: '162'
+  clasz: '1621'
+  description: Fabricarea de furnire și a panourilor din lemn
+clasz_1622:
+  section: C
+  division: '16'
+  group: '162'
+  clasz: '1622'
+  description: Fabricarea parchetului asamblat în panouri
+clasz_1623:
+  section: C
+  division: '16'
+  group: '162'
+  clasz: '1623'
+  description: Fabricarea altor elemente de dulgherie și tâmplărie, pentru construcții
+clasz_1624:
+  section: C
+  division: '16'
+  group: '162'
+  clasz: '1624'
+  description: Fabricarea ambalajelor din lemn
+clasz_1629:
+  section: C
+  division: '16'
+  group: '162'
+  clasz: '1629'
+  description: Fabricarea altor produse din lemn; fabricarea articolelor din plută, paie și din alte materiale vegetale împletite
+clasz_1711:
+  section: C
+  division: '17'
+  group: '171'
+  clasz: '1711'
+  description: Fabricarea celulozei
+clasz_1712:
+  section: C
+  division: '17'
+  group: '171'
+  clasz: '1712'
+  description: Fabricarea hârtiei și cartonului
+clasz_1721:
+  section: C
+  division: '17'
+  group: '172'
+  clasz: '1721'
+  description: Fabricarea hârtiei și cartonului ondulat și a ambalajelor din hârtie și carton
+clasz_1722:
+  section: C
+  division: '17'
+  group: '172'
+  clasz: '1722'
+  description: Fabricarea produselor de uz gospodăresc și sanitar, din hârtie sau carton
+clasz_1723:
+  section: C
+  division: '17'
+  group: '172'
+  clasz: '1723'
+  description: Fabricarea articolelor de papetărie
+clasz_1724:
+  section: C
+  division: '17'
+  group: '172'
+  clasz: '1724'
+  description: Fabricarea tapetului
+clasz_1729:
+  section: C
+  division: '17'
+  group: '172'
+  clasz: '1729'
+  description: Fabricarea altor articole din hârtie și carton n.c.a.
+clasz_1811:
+  section: C
+  division: '18'
+  group: '181'
+  clasz: '1811'
+  description: Tipărirea ziarelor
+clasz_1812:
+  section: C
+  division: '18'
+  group: '181'
+  clasz: '1812'
+  description: Alte activități de tipărire n.c.a.
+clasz_1813:
+  section: C
+  division: '18'
+  group: '181'
+  clasz: '1813'
+  description: Servicii pregătitoare pentru pretipărire
+clasz_1814:
+  section: C
+  division: '18'
+  group: '181'
+  clasz: '1814'
+  description: Legătorie și servicii conexe
+clasz_1820:
+  section: C
+  division: '18'
+  group: '182'
+  clasz: '1820'
+  description: Reproducerea înregistrărilor
+clasz_1910:
+  section: C
+  division: '19'
+  group: '191'
+  clasz: '1910'
+  description: Fabricarea produselor de cocserie
+clasz_1920:
+  section: C
+  division: '19'
+  group: '192'
+  clasz: '1920'
+  description: Fabricarea produselor obținute din prelucrarea țițeiului
+clasz_2011:
+  section: C
+  division: '20'
+  group: '201'
+  clasz: '2011'
+  description: Fabricarea gazelor industriale
+clasz_2012:
+  section: C
+  division: '20'
+  group: '201'
+  clasz: '2012'
+  description: Fabricarea coloranților și a pigmenților
+clasz_2013:
+  section: C
+  division: '20'
+  group: '201'
+  clasz: '2013'
+  description: Fabricarea altor produse chimice anorganice, de bază
+clasz_2014:
+  section: C
+  division: '20'
+  group: '201'
+  clasz: '2014'
+  description: Fabricarea altor produse chimice organice, de bază
+clasz_2015:
+  section: C
+  division: '20'
+  group: '201'
+  clasz: '2015'
+  description: Fabricarea îngrășămintelor și produselor azotoase
+clasz_2016:
+  section: C
+  division: '20'
+  group: '201'
+  clasz: '2016'
+  description: Fabricarea materialelor plastice în forme primare
+clasz_2017:
+  section: C
+  division: '20'
+  group: '201'
+  clasz: '2017'
+  description: Fabricarea cauciucului sintetic în forme primare
+clasz_2020:
+  section: C
+  division: '20'
+  group: '202'
+  clasz: '2020'
+  description: Fabricarea pesticidelor și a altor produse agrochimice
+clasz_2030:
+  section: C
+  division: '20'
+  group: '203'
+  clasz: '2030'
+  description: Fabricarea vopselelor, lacurilor, cernelii tipografice și masticurilor
+clasz_2041:
+  section: C
+  division: '20'
+  group: '204'
+  clasz: '2041'
+  description: Fabricarea săpunurilor, detergenților și a produselor de întreținere
+clasz_2042:
+  section: C
+  division: '20'
+  group: '204'
+  clasz: '2042'
+  description: Fabricarea parfumurilor și a produselor cosmetice (de toaletă)
+clasz_2051:
+  section: C
+  division: '20'
+  group: '205'
+  clasz: '2051'
+  description: Fabricarea explozivilor
+clasz_2052:
+  section: C
+  division: '20'
+  group: '205'
+  clasz: '2052'
+  description: Fabricarea cleiurilor
+clasz_2053:
+  section: C
+  division: '20'
+  group: '205'
+  clasz: '2053'
+  description: Fabricarea uleiurilor esențiale
+clasz_2059:
+  section: C
+  division: '20'
+  group: '205'
+  clasz: '2059'
+  description: Fabricarea altor produse chimice n.c.a.
+clasz_2060:
+  section: C
+  division: '20'
+  group: '206'
+  clasz: '2060'
+  description: Fabricarea fibrelor sintetice și artificiale
+clasz_2110:
+  section: C
+  division: '21'
+  group: '211'
+  clasz: '2110'
+  description: Fabricarea produselor farmaceutice de bază
+clasz_2120:
+  section: C
+  division: '21'
+  group: '212'
+  clasz: '2120'
+  description: Fabricarea preparatelor farmaceutice
+clasz_2211:
+  section: C
+  division: '22'
+  group: '221'
+  clasz: '2211'
+  description: Fabricarea anvelopelor și a camerelor de aer; reșaparea și refacerea anvelopelor
+clasz_2219:
+  section: C
+  division: '22'
+  group: '221'
+  clasz: '2219'
+  description: Fabricarea altor produse din cauciuc
+clasz_2221:
+  section: C
+  division: '22'
+  group: '222'
+  clasz: '2221'
+  description: Fabricarea plăcilor, foliilor, tuburilor și profilelor din material plastic
+clasz_2222:
+  section: C
+  division: '22'
+  group: '222'
+  clasz: '2222'
+  description: Fabricarea articolelor de ambalaj din material plastic
+clasz_2223:
+  section: C
+  division: '22'
+  group: '222'
+  clasz: '2223'
+  description: Fabricarea articolelor din material plastic pentru construcții
+clasz_2229:
+  section: C
+  division: '22'
+  group: '222'
+  clasz: '2229'
+  description: Fabricarea altor produse din material plastic
+clasz_2311:
+  section: C
+  division: '23'
+  group: '231'
+  clasz: '2311'
+  description: Fabricarea sticlei plate
+clasz_2312:
+  section: C
+  division: '23'
+  group: '231'
+  clasz: '2312'
+  description: Prelucrarea și fasonarea sticlei plate
+clasz_2313:
+  section: C
+  division: '23'
+  group: '231'
+  clasz: '2313'
+  description: Fabricarea articolelor din sticlă
+clasz_2314:
+  section: C
+  division: '23'
+  group: '231'
+  clasz: '2314'
+  description: Fabricarea fibrelor din sticlă
+clasz_2319:
+  section: C
+  division: '23'
+  group: '231'
+  clasz: '2319'
+  description: Fabricarea de sticlărie tehnică
+clasz_2320:
+  section: C
+  division: '23'
+  group: '232'
+  clasz: '2320'
+  description: Fabricarea de produse refractare
+clasz_2331:
+  section: C
+  division: '23'
+  group: '233'
+  clasz: '2331'
+  description: Fabricarea plăcilor și dalelor din ceramică
+clasz_2332:
+  section: C
+  division: '23'
+  group: '233'
+  clasz: '2332'
+  description: Fabricarea cărămizilor, țiglelor și altor produse pentru construcții, din argilă arsă
+clasz_2341:
+  section: C
+  division: '23'
+  group: '234'
+  clasz: '2341'
+  description: Fabricarea articolelor ceramice pentru uz gospodăresc și ornamental
+clasz_2342:
+  section: C
+  division: '23'
+  group: '234'
+  clasz: '2342'
+  description: Fabricarea de obiecte sanitare din ceramică
+clasz_2343:
+  section: C
+  division: '23'
+  group: '234'
+  clasz: '2343'
+  description: Fabricarea izolatorilor și pieselor izolante din ceramică
+clasz_2344:
+  section: C
+  division: '23'
+  group: '234'
+  clasz: '2344'
+  description: Fabricarea altor produse tehnice din ceramică
+clasz_2349:
+  section: C
+  division: '23'
+  group: '234'
+  clasz: '2349'
+  description: Fabricarea altor produse ceramice n.c.a.
+clasz_2351:
+  section: C
+  division: '23'
+  group: '235'
+  clasz: '2351'
+  description: Fabricarea cimentului
+clasz_2352:
+  section: C
+  division: '23'
+  group: '235'
+  clasz: '2352'
+  description: Fabricarea varului și ipsosului
+clasz_2361:
+  section: C
+  division: '23'
+  group: '236'
+  clasz: '2361'
+  description: Fabricarea produselor din beton pentru construcții
+clasz_2362:
+  section: C
+  division: '23'
+  group: '236'
+  clasz: '2362'
+  description: Fabricarea produselor din ipsos pentru construcții
+clasz_2363:
+  section: C
+  division: '23'
+  group: '236'
+  clasz: '2363'
+  description: Fabricarea betonului
+clasz_2364:
+  section: C
+  division: '23'
+  group: '236'
+  clasz: '2364'
+  description: Fabricarea mortarului
+clasz_2365:
+  section: C
+  division: '23'
+  group: '236'
+  clasz: '2365'
+  description: Fabricarea produselor din azbociment
+clasz_2369:
+  section: C
+  division: '23'
+  group: '236'
+  clasz: '2369'
+  description: Fabricarea altor articole din beton, ciment și ipsos
+clasz_2370:
+  section: C
+  division: '23'
+  group: '237'
+  clasz: '2370'
+  description: Tăierea, fasonarea și finisarea pietrei
+clasz_2391:
+  section: C
+  division: '23'
+  group: '239'
+  clasz: '2391'
+  description: Fabricarea de produse abrazive
+clasz_2399:
+  section: C
+  division: '23'
+  group: '239'
+  clasz: '2399'
+  description: Fabricarea altor produse din minerale nemetalice, n.c.a.
+clasz_2410:
+  section: C
+  division: '24'
+  group: '241'
+  clasz: '2410'
+  description: Producția de metale feroase sub forme primare și de feroaliaje
+clasz_2420:
+  section: C
+  division: '24'
+  group: '242'
+  clasz: '2420'
+  description: Producția de tuburi, țevi, profile tubulare și accesorii pentru acestea, din oțel
+clasz_2431:
+  section: C
+  division: '24'
+  group: '243'
+  clasz: '2431'
+  description: Tragere la rece a barelor
+clasz_2432:
+  section: C
+  division: '24'
+  group: '243'
+  clasz: '2432'
+  description: Laminare la rece a benzilor înguste
+clasz_2433:
+  section: C
+  division: '24'
+  group: '243'
+  clasz: '2433'
+  description: Producția de profile obținute la rece
+clasz_2434:
+  section: C
+  division: '24'
+  group: '243'
+  clasz: '2434'
+  description: Trefilarea firelor la rece
+clasz_2441:
+  section: C
+  division: '24'
+  group: '244'
+  clasz: '2441'
+  description: Producția metalelor prețioase
+clasz_2442:
+  section: C
+  division: '24'
+  group: '244'
+  clasz: '2442'
+  description: Metalurgia aluminiului
+clasz_2443:
+  section: C
+  division: '24'
+  group: '244'
+  clasz: '2443'
+  description: Producția plumbului, zincului și cositorului
+clasz_2444:
+  section: C
+  division: '24'
+  group: '244'
+  clasz: '2444'
+  description: Metalurgia cuprului
+clasz_2445:
+  section: C
+  division: '24'
+  group: '244'
+  clasz: '2445'
+  description: Producția altor metale neferoase
+clasz_2446:
+  section: C
+  division: '24'
+  group: '244'
+  clasz: '2446'
+  description: Prelucrarea combustibililor nucleari
+clasz_2451:
+  section: C
+  division: '24'
+  group: '245'
+  clasz: '2451'
+  description: Turnarea fontei
+clasz_2452:
+  section: C
+  division: '24'
+  group: '245'
+  clasz: '2452'
+  description: Turnarea oțelului
+clasz_2453:
+  section: C
+  division: '24'
+  group: '245'
+  clasz: '2453'
+  description: Turnarea metalelor neferoase ușoare
+clasz_2454:
+  section: C
+  division: '24'
+  group: '245'
+  clasz: '2454'
+  description: Turnarea altor metale neferoase
+clasz_2511:
+  section: C
+  division: '25'
+  group: '251'
+  clasz: '2511'
+  description: Fabricarea de construcții metalice și părți componente ale structurilor metalice
+clasz_2512:
+  section: C
+  division: '25'
+  group: '251'
+  clasz: '2512'
+  description: Fabricarea de uși și ferestre din metal centrală
+clasz_2521:
+  section: C
+  division: '25'
+  group: '252'
+  clasz: '2521'
+  description: Producția de radiatoare și cazane pentru încălzire centrală
+clasz_2529:
+  section: C
+  division: '25'
+  group: '252'
+  clasz: '2529'
+  description: Producția de rezervoare, cisterne și containere metalice
+clasz_2530:
+  section: C
+  division: '25'
+  group: '253'
+  clasz: '2530'
+  description: Producția generatoarelor de aburi (cu excepția cazanelor pentru încălzire centrală)
+clasz_2540:
+  section: C
+  division: '25'
+  group: '254'
+  clasz: '2540'
+  description: Fabricarea armamentului și muniției
+clasz_2550:
+  section: C
+  division: '25'
+  group: '255'
+  clasz: '2550'
+  description: Fabricarea produselor metalice obținute prin deformare plastică; metalurgia pulberilor
+clasz_2561:
+  section: C
+  division: '25'
+  group: '256'
+  clasz: '2561'
+  description: Tratarea și acoperirea metalelor
+clasz_2562:
+  section: C
+  division: '25'
+  group: '256'
+  clasz: '2562'
+  description: Operațiuni de mecanică generală
+clasz_2571:
+  section: C
+  division: '25'
+  group: '257'
+  clasz: '2571'
+  description: Fabricarea produselor de tăiat
+clasz_2572:
+  section: C
+  division: '25'
+  group: '257'
+  clasz: '2572'
+  description: Fabricarea articolelor de feronerie
+clasz_2573:
+  section: C
+  division: '25'
+  group: '257'
+  clasz: '2573'
+  description: Fabricarea uneltelor
+clasz_2591:
+  section: C
+  division: '25'
+  group: '259'
+  clasz: '2591'
+  description: Fabricarea de recipienți, containere și alte produse similare din oțel
+clasz_2592:
+  section: C
+  division: '25'
+  group: '259'
+  clasz: '2592'
+  description: Fabricarea ambalajelor ușoare din metal
+clasz_2593:
+  section: C
+  division: '25'
+  group: '259'
+  clasz: '2593'
+  description: Fabricarea articolelor din fire metalice; fabricarea de lanțuri și arcuri
+clasz_2594:
+  section: C
+  division: '25'
+  group: '259'
+  clasz: '2594'
+  description: 'Fabricarea de șuruburi, buloane și alte articole filetate: fabricarea de nituri și șaibe'
+clasz_2599:
+  section: C
+  division: '25'
+  group: '259'
+  clasz: '2599'
+  description: Fabricarea altor articole din metal n.c.a.
+clasz_2611:
+  section: C
+  division: '26'
+  group: '261'
+  clasz: '2611'
+  description: Fabricarea subansamblurilor electronice (module)
+clasz_2612:
+  section: C
+  division: '26'
+  group: '261'
+  clasz: '2612'
+  description: Fabricarea altor componente electronice
+clasz_2620:
+  section: C
+  division: '26'
+  group: '262'
+  clasz: '2620'
+  description: Fabricarea calculatoarelor și a echipamentelor periferice
+clasz_2630:
+  section: C
+  division: '26'
+  group: '263'
+  clasz: '2630'
+  description: Fabricarea echipamentelor de comunicații
+clasz_2640:
+  section: C
+  division: '26'
+  group: '264'
+  clasz: '2640'
+  description: Fabricarea produselor electronice de larg consum
+clasz_2651:
+  section: C
+  division: '26'
+  group: '265'
+  clasz: '2651'
+  description: Fabricarea de instrumente și dispozitive pentru măsură, verificare, control, navigație
+clasz_2652:
+  section: C
+  division: '26'
+  group: '265'
+  clasz: '2652'
+  description: Producția de ceasuri
+clasz_2660:
+  section: C
+  division: '26'
+  group: '266'
+  clasz: '2660'
+  description: Fabricarea de echipamente pentru radiologie, electrodiagnostic și electroterapie
+clasz_2670:
+  section: C
+  division: '26'
+  group: '267'
+  clasz: '2670'
+  description: Fabricarea de instrumente optice și echipamente fotografice
+clasz_2680:
+  section: C
+  division: '26'
+  group: '268'
+  clasz: '2680'
+  description: Fabricarea suporților magnetici și optici destinați înregistrărilor
+clasz_2711:
+  section: C
+  division: '27'
+  group: '271'
+  clasz: '2711'
+  description: Fabricarea motoarelor, generatoarelor și transformatoarelor electrice
+clasz_2712:
+  section: C
+  division: '27'
+  group: '271'
+  clasz: '2712'
+  description: Fabricarea aparatelor de distribuție și control a electricității
+clasz_2720:
+  section: C
+  division: '27'
+  group: '272'
+  clasz: '2720'
+  description: Fabricarea de acumulatori și baterii
+clasz_2731:
+  section: C
+  division: '27'
+  group: '273'
+  clasz: '2731'
+  description: Fabricarea de cabluri cu fibră optică
+clasz_2732:
+  section: C
+  division: '27'
+  group: '273'
+  clasz: '2732'
+  description: Fabricarea altor fire și cabluri electrice și electronice
+clasz_2733:
+  section: C
+  division: '27'
+  group: '273'
+  clasz: '2733'
+  description: Fabricarea dispozitivelor de conexiune pentru fire și cabluri electrice și electronice
+clasz_2740:
+  section: C
+  division: '27'
+  group: '274'
+  clasz: '2740'
+  description: Fabricarea de echipamente electrice de iluminat
+clasz_2751:
+  section: C
+  division: '27'
+  group: '275'
+  clasz: '2751'
+  description: Fabricarea de aparate electrocasnice
+clasz_2752:
+  section: C
+  division: '27'
+  group: '275'
+  clasz: '2752'
+  description: Fabricarea de echipamente casnice neelectrice electrice
+clasz_2790:
+  section: C
+  division: '27'
+  group: '279'
+  clasz: '2790'
+  description: Fabricarea altor echipamente electrice
+clasz_2811:
+  section: C
+  division: '28'
+  group: '281'
+  clasz: '2811'
+  description: Fabricarea de motoare și turbine (cu excepția celor pentru avioane, autovehicule și motociclete.)
+clasz_2812:
+  section: C
+  division: '28'
+  group: '281'
+  clasz: '2812'
+  description: Fabricarea de motoare hidraulice
+clasz_2813:
+  section: C
+  division: '28'
+  group: '281'
+  clasz: '2813'
+  description: Fabricarea de pompe și compresoare
+clasz_2814:
+  section: C
+  division: '28'
+  group: '281'
+  clasz: '2814'
+  description: Fabricarea de articole de robinetărie
+clasz_2815:
+  section: C
+  division: '28'
+  group: '281'
+  clasz: '2815'
+  description: Fabricarea lagărelor, angrenajelor, cutiilor de viteză și a elementelor mecanice de transmisie
+clasz_2821:
+  section: C
+  division: '28'
+  group: '282'
+  clasz: '2821'
+  description: Fabricarea cuptoarelor, furnalelor și arzătoarelor
+clasz_2822:
+  section: C
+  division: '28'
+  group: '282'
+  clasz: '2822'
+  description: Fabricarea echipamentelor de ridicat și manipulat
+clasz_2823:
+  section: C
+  division: '28'
+  group: '282'
+  clasz: '2823'
+  description: Fabricarea mașinilor și echipamentelor de birou (exclusiv fabricarea calculatoarelor și a echipamentelor periferice)
+clasz_2824:
+  section: C
+  division: '28'
+  group: '282'
+  clasz: '2824'
+  description: Fabricarea mașinilor-unelte portabile acționate electric
+clasz_2825:
+  section: C
+  division: '28'
+  group: '282'
+  clasz: '2825'
+  description: Fabricarea echipamentelor de ventilație și frigorifice, exclusiv a echipamentelor de uz casnic
+clasz_2829:
+  section: C
+  division: '28'
+  group: '282'
+  clasz: '2829'
+  description: Fabricarea altor mașini și utilaje de utilizare generală n.c.a.
+clasz_2830:
+  section: C
+  division: '28'
+  group: '283'
+  clasz: '2830'
+  description: Fabricarea mașinilor și utilajelor pentru agricultură și exploatări forestiere
+clasz_2841:
+  section: C
+  division: '28'
+  group: '284'
+  clasz: '2841'
+  description: Fabricarea utilajelor și a mașinilor-unelte pentru prelucrarea metalului
+clasz_2849:
+  section: C
+  division: '28'
+  group: '284'
+  clasz: '2849'
+  description: Fabricarea altor mașini-unelte n.c.a.
+clasz_2891:
+  section: C
+  division: '28'
+  group: '289'
+  clasz: '2891'
+  description: Fabricarea utilajelor pentru metalurgie
+clasz_2892:
+  section: C
+  division: '28'
+  group: '289'
+  clasz: '2892'
+  description: Fabricarea utilajelor pentru extracție și construcții
+clasz_2893:
+  section: C
+  division: '28'
+  group: '289'
+  clasz: '2893'
+  description: Fabricarea utilajelor pentru prelucrarea produselor alimentare, băuturilor și tutunului
+clasz_2894:
+  section: C
+  division: '28'
+  group: '289'
+  clasz: '2894'
+  description: Fabricarea utilajelor pentru industria textilă, a îmbrăcămintei și a pielăriei
+clasz_2895:
+  section: C
+  division: '28'
+  group: '289'
+  clasz: '2895'
+  description: Fabricarea utilajelor pentru industria hârtiei și cartonului
+clasz_2896:
+  section: C
+  division: '28'
+  group: '289'
+  clasz: '2896'
+  description: Fabricarea utilajelor pentru prelucrarea maselor plastice și a cauciucului
+clasz_2899:
+  section: C
+  division: '28'
+  group: '289'
+  clasz: '2899'
+  description: Fabricarea altor mașini și utilaje specifice n.c.a.
+clasz_2910:
+  section: C
+  division: '29'
+  group: '291'
+  clasz: '2910'
+  description: Fabricarea autovehiculelor de transport rutier
+clasz_2920:
+  section: C
+  division: '29'
+  group: '292'
+  clasz: '2920'
+  description: Producția de caroserii pentru autovehicule; fabricarea de remorci și semiremorci
+clasz_2931:
+  section: C
+  division: '29'
+  group: '293'
+  clasz: '2931'
+  description: Fabricarea de echipamente electrice și electronice pentru autovehicule și pentru motoare de autovehicule
+clasz_2932:
+  section: C
+  division: '29'
+  group: '293'
+  clasz: '2932'
+  description: Fabricarea altor piese și accesorii pentru autovehicule și pentru motoare de autovehicule
+clasz_3011:
+  section: C
+  division: '30'
+  group: '301'
+  clasz: '3011'
+  description: Construcția de nave și structuri plutitoare
+clasz_3012:
+  section: C
+  division: '30'
+  group: '301'
+  clasz: '3012'
+  description: Construcția de ambarcațiuni sportive și de agrement
+clasz_3020:
+  section: C
+  division: '30'
+  group: '302'
+  clasz: '3020'
+  description: Fabricarea materialului rulant
+clasz_3030:
+  section: C
+  division: '30'
+  group: '303'
+  clasz: '3030'
+  description: Fabricarea de aeronave și nave spațiale
+clasz_3040:
+  section: C
+  division: '30'
+  group: '304'
+  clasz: '3040'
+  description: Fabricarea vehiculelor militare de luptă
+clasz_3091:
+  section: C
+  division: '30'
+  group: '309'
+  clasz: '3091'
+  description: Fabricarea de motociclete
+clasz_3092:
+  section: C
+  division: '30'
+  group: '309'
+  clasz: '3092'
+  description: Fabricarea de biciclete și de vehicule pentru invalizi
+clasz_3099:
+  section: C
+  division: '30'
+  group: '309'
+  clasz: '3099'
+  description: Fabricarea altor mijloace de transport n.c.a.
+clasz_3101:
+  section: C
+  division: '31'
+  group: '310'
+  clasz: '3101'
+  description: Fabricarea de mobilă pentru birouri și magazine
+clasz_3102:
+  section: C
+  division: '31'
+  group: '310'
+  clasz: '3102'
+  description: Fabricarea de mobilă pentru bucătării
+clasz_3103:
+  section: C
+  division: '31'
+  group: '310'
+  clasz: '3103'
+  description: Fabricarea de saltele și somiere
+clasz_3109:
+  section: C
+  division: '31'
+  group: '310'
+  clasz: '3109'
+  description: Fabricarea de mobilă n.c.a.
+clasz_3211:
+  section: C
+  division: '32'
+  group: '321'
+  clasz: '3211'
+  description: Baterea monedelor
+clasz_3212:
+  section: C
+  division: '32'
+  group: '321'
+  clasz: '3212'
+  description: Fabricarea bijuteriilor și articolelor similare din metale și pietre prețioase
+clasz_3213:
+  section: C
+  division: '32'
+  group: '321'
+  clasz: '3213'
+  description: Fabricarea imitațiilor de bijuterii și articole similare
+clasz_3220:
+  section: C
+  division: '32'
+  group: '322'
+  clasz: '3220'
+  description: Fabricarea instrumentelor muzicale
+clasz_3230:
+  section: C
+  division: '32'
+  group: '323'
+  clasz: '3230'
+  description: Fabricarea articolelor pentru sport
+clasz_3240:
+  section: C
+  division: '32'
+  group: '324'
+  clasz: '3240'
+  description: Fabricarea jocurilor și jucăriilor
+clasz_3250:
+  section: C
+  division: '32'
+  group: '325'
+  clasz: '3250'
+  description: Fabricarea de dispozitive, aparate și instrumente medicale stomatologice
+clasz_3291:
+  section: C
+  division: '32'
+  group: '329'
+  clasz: '3291'
+  description: Fabricarea măturilor și periilor
+clasz_3299:
+  section: C
+  division: '32'
+  group: '329'
+  clasz: '3299'
+  description: Fabricarea altor produse manufacturiere n.c.a.
+clasz_3311:
+  section: C
+  division: '33'
+  group: '331'
+  clasz: '3311'
+  description: Repararea articolelor fabricate din metal
+clasz_3312:
+  section: C
+  division: '33'
+  group: '331'
+  clasz: '3312'
+  description: Repararea mașinilor
+clasz_3313:
+  section: C
+  division: '33'
+  group: '331'
+  clasz: '3313'
+  description: Repararea echipamentelor electronice și optice
+clasz_3314:
+  section: C
+  division: '33'
+  group: '331'
+  clasz: '3314'
+  description: Repararea echipamentelor electrice
+clasz_3315:
+  section: C
+  division: '33'
+  group: '331'
+  clasz: '3315'
+  description: Repararea și întreținerea navelor și bărcilor
+clasz_3316:
+  section: C
+  division: '33'
+  group: '331'
+  clasz: '3316'
+  description: Repararea și întreținerea aeronavelor și navelor spațiale
+clasz_3317:
+  section: C
+  division: '33'
+  group: '331'
+  clasz: '3317'
+  description: Repararea și întreținerea altor echipamentelor de transport n.c.a.
+clasz_3319:
+  section: C
+  division: '33'
+  group: '331'
+  clasz: '3319'
+  description: Repararea altor echipamente
+clasz_3320:
+  section: C
+  division: '33'
+  group: '332'
+  clasz: '3320'
+  description: Instalarea mașinilor și echipamentelor industriale
+clasz_3511:
+  section: D
+  division: '35'
+  group: '351'
+  clasz: '3511'
+  description: Producția de energie electrică
+clasz_3512:
+  section: D
+  division: '35'
+  group: '351'
+  clasz: '3512'
+  description: Transportul energiei electrice
+clasz_3513:
+  section: D
+  division: '35'
+  group: '351'
+  clasz: '3513'
+  description: Distribuția energiei electrice
+clasz_3514:
+  section: D
+  division: '35'
+  group: '351'
+  clasz: '3514'
+  description: Comercializarea energiei electrice
+clasz_3521:
+  section: D
+  division: '35'
+  group: '352'
+  clasz: '3521'
+  description: Producția gazelor
+clasz_3522:
+  section: D
+  division: '35'
+  group: '352'
+  clasz: '3522'
+  description: Distribuția combustibililor gazoși, prin conducte
+clasz_3523:
+  section: D
+  division: '35'
+  group: '352'
+  clasz: '3523'
+  description: Comercializarea combustibililor gazoși, prin conducte
+clasz_3530:
+  section: D
+  division: '35'
+  group: '353'
+  clasz: '3530'
+  description: Furnizarea de abur și aer condiționat
+clasz_3600:
+  section: E
+  division: '36'
+  group: '360'
+  clasz: '3600'
+  description: Captarea, tratarea și distribuția apei
+clasz_3700:
+  section: E
+  division: '37'
+  group: '370'
+  clasz: '3700'
+  description: Colectarea și epurarea apelor uzate deșeurilor; activități de recuperare a materialelor reciclabile
+clasz_3811:
+  section: E
+  division: '38'
+  group: '381'
+  clasz: '3811'
+  description: Colectarea deșeurilor nepericuloase
+clasz_3812:
+  section: E
+  division: '38'
+  group: '381'
+  clasz: '3812'
+  description: Colectarea deșeurilor periculoase
+clasz_3821:
+  section: E
+  division: '38'
+  group: '382'
+  clasz: '3821'
+  description: Tratarea și eliminarea deșeurilor nepericuloase
+clasz_3822:
+  section: E
+  division: '38'
+  group: '382'
+  clasz: '3822'
+  description: Tratarea și eliminarea deșeurilor periculoase
+clasz_3831:
+  section: E
+  division: '38'
+  group: '383'
+  clasz: '3831'
+  description: Demontarea (dezasamblarea) mașinilor și a echipamentelor scoase din uz pentru recuperarea materialelor
+clasz_3832:
+  section: E
+  division: '38'
+  group: '383'
+  clasz: '3832'
+  description: Recuperarea materialelor reciclabile sortate
+clasz_3900:
+  section: E
+  division: '39'
+  group: '390'
+  clasz: '3900'
+  description: Activități și servicii de decontaminare
+clasz_4110:
+  section: F
+  division: '41'
+  group: '411'
+  clasz: '4110'
+  description: Dezvoltare (promovare) imobiliară rezidențiale și nerezidențiale
+clasz_4120:
+  section: F
+  division: '41'
+  group: '412'
+  clasz: '4120'
+  description: Lucrări de construcții a clădirilor rezidențiale și nerezidențiale
+clasz_4211:
+  section: F
+  division: '42'
+  group: '421'
+  clasz: '4211'
+  description: Lucrări de construcții a drumurilor și autostrăzilor
+clasz_4212:
+  section: F
+  division: '42'
+  group: '421'
+  clasz: '4212'
+  description: Lucrări de construcții a căilor ferate de suprafață și subterane
+clasz_4213:
+  section: F
+  division: '42'
+  group: '421'
+  clasz: '4213'
+  description: Construcția de poduri și tuneluri
+clasz_4221:
+  section: F
+  division: '42'
+  group: '422'
+  clasz: '4221'
+  description: Lucrări de construcții a proiectelor utilitare pentru fluide
+clasz_4222:
+  section: F
+  division: '42'
+  group: '422'
+  clasz: '4222'
+  description: Lucrări de construcții a proiectelor utilitare pentru electricitate și telecomunicații
+clasz_4291:
+  section: F
+  division: '42'
+  group: '429'
+  clasz: '4291'
+  description: Construcții hidrotehnice
+clasz_4299:
+  section: F
+  division: '42'
+  group: '429'
+  clasz: '4299'
+  description: Lucrări de construcții a altor proiecte inginerești n.c.a.
+clasz_4311:
+  section: F
+  division: '43'
+  group: '431'
+  clasz: '4311'
+  description: Lucrări de demolare a construcțiilor
+clasz_4312:
+  section: F
+  division: '43'
+  group: '431'
+  clasz: '4312'
+  description: Lucrări de pregătire a terenului
+clasz_4313:
+  section: F
+  division: '43'
+  group: '431'
+  clasz: '4313'
+  description: Lucrări de foraj și sondaj pentru construcții
+clasz_4321:
+  section: F
+  division: '43'
+  group: '432'
+  clasz: '4321'
+  description: Lucrări de instalații electrice
+clasz_4322:
+  section: F
+  division: '43'
+  group: '432'
+  clasz: '4322'
+  description: Lucrări de instalații sanitare, de încălzire și de aer condiționat
+clasz_4329:
+  section: F
+  division: '43'
+  group: '432'
+  clasz: '4329'
+  description: Alte lucrări de instalații pentru construcții
+clasz_4331:
+  section: F
+  division: '43'
+  group: '433'
+  clasz: '4331'
+  description: Lucrări de ipsoserie
+clasz_4332:
+  section: F
+  division: '43'
+  group: '433'
+  clasz: '4332'
+  description: Lucrări de tâmplărie și dulgherie
+clasz_4333:
+  section: F
+  division: '43'
+  group: '433'
+  clasz: '4333'
+  description: Lucrări de pardosire și placare a pereților
+clasz_4334:
+  section: F
+  division: '43'
+  group: '433'
+  clasz: '4334'
+  description: Lucrări de vopsitorie, zugrăveli și montări de geamuri
+clasz_4339:
+  section: F
+  division: '43'
+  group: '433'
+  clasz: '4339'
+  description: Alte lucrări de finisare
+clasz_4391:
+  section: F
+  division: '43'
+  group: '439'
+  clasz: '4391'
+  description: Lucrări de învelitori, șarpante și terase la construcții
+clasz_4399:
+  section: F
+  division: '43'
+  group: '439'
+  clasz: '4399'
+  description: Alte lucrări speciale de construcții n.c.a.
+clasz_4511:
+  section: G
+  division: '45'
+  group: '451'
+  clasz: '4511'
+  description: Comerț cu autoturisme și autovehicule ușoare (sub 3,5 tone)
+clasz_4519:
+  section: G
+  division: '45'
+  group: '451'
+  clasz: '4519'
+  description: Comerț cu alte autovehicule
+clasz_4520:
+  section: G
+  division: '45'
+  group: '452'
+  clasz: '4520'
+  description: Întreținerea și repararea autovehiculelor
+clasz_4531:
+  section: G
+  division: '45'
+  group: '453'
+  clasz: '4531'
+  description: Comerț cu ridicata de piese și accesorii pentru autovehicule
+clasz_4532:
+  section: G
+  division: '45'
+  group: '453'
+  clasz: '4532'
+  description: Comerț cu amănuntul de piese și accesorii pentru autovehicule
+clasz_4540:
+  section: G
+  division: '45'
+  group: '454'
+  clasz: '4540'
+  description: Comerț cu motociclete, piese și accesorii aferente; întreținerea și repararea motocicletelor
+clasz_4611:
+  section: G
+  division: '46'
+  group: '461'
+  clasz: '4611'
+  description: Intermedieri în comerțul cu materii prime agricole, animale vii, materii prime textile și cu semifabricate
+clasz_4612:
+  section: G
+  division: '46'
+  group: '461'
+  clasz: '4612'
+  description: Intermedieri în comerțul cu combustibili, minereuri, metale și produse chimice pentru industrie
+clasz_4613:
+  section: G
+  division: '46'
+  group: '461'
+  clasz: '4613'
+  description: Intermedieri în comerțul cu material lemnos și materiale de construcții
+clasz_4614:
+  section: G
+  division: '46'
+  group: '461'
+  clasz: '4614'
+  description: Intermedieri în comerțul cu mașini, echipamente industriale, nave și avioane
+clasz_4615:
+  section: G
+  division: '46'
+  group: '461'
+  clasz: '4615'
+  description: Intermedieri în comerțul cu mobilă, articole de menaj și de fierărie
+clasz_4616:
+  section: G
+  division: '46'
+  group: '461'
+  clasz: '4616'
+  description: Intermedieri în comerțul cu textile, confecții din blană, încălțăminte și articole din piele
+clasz_4617:
+  section: G
+  division: '46'
+  group: '461'
+  clasz: '4617'
+  description: Intermedieri în comerțul cu produse alimentare, băuturi și tutun
+clasz_4618:
+  section: G
+  division: '46'
+  group: '461'
+  clasz: '4618'
+  description: Intermedieri în comerțul specializat în vânzarea produselor cu caracter specific, n.c.a.
+clasz_4619:
+  section: G
+  division: '46'
+  group: '461'
+  clasz: '4619'
+  description: Intermedieri în comerțul cu produse diverse
+clasz_4621:
+  section: G
+  division: '46'
+  group: '462'
+  clasz: '4621'
+  description: Comerț cu ridicata al cerealelor, semințelor, furajelor și tutunului neprelucrat
+clasz_4622:
+  section: G
+  division: '46'
+  group: '462'
+  clasz: '4622'
+  description: Comerț cu ridicata al florilor și al plantelor
+clasz_4623:
+  section: G
+  division: '46'
+  group: '462'
+  clasz: '4623'
+  description: Comerț cu ridicata al animalelor vii
+clasz_4624:
+  section: G
+  division: '46'
+  group: '462'
+  clasz: '4624'
+  description: Comerț cu ridicata al blănurilor, pieilor brute și al pieilor prelucrate
+clasz_4631:
+  section: G
+  division: '46'
+  group: '463'
+  clasz: '4631'
+  description: Comerț cu ridicata al fructelor și legumelor
+clasz_4632:
+  section: G
+  division: '46'
+  group: '463'
+  clasz: '4632'
+  description: Comerț cu ridicata al cărnii și produselor din carne
+clasz_4633:
+  section: G
+  division: '46'
+  group: '463'
+  clasz: '4633'
+  description: Comerț cu ridicata al produselor lactate, ouălor, uleiurilor și grăsimilor comestibile
+clasz_4634:
+  section: G
+  division: '46'
+  group: '463'
+  clasz: '4634'
+  description: Comerț cu ridicata al băuturilor
+clasz_4635:
+  section: G
+  division: '46'
+  group: '463'
+  clasz: '4635'
+  description: Comerț cu ridicata al produselor din tutun
+clasz_4636:
+  section: G
+  division: '46'
+  group: '463'
+  clasz: '4636'
+  description: Comerț cu ridicata al zahărului, ciocolatei și produselor zaharoase
+clasz_4637:
+  section: G
+  division: '46'
+  group: '463'
+  clasz: '4637'
+  description: Comerț cu ridicata cu cafea, ceai, cacao și condimente
+clasz_4638:
+  section: G
+  division: '46'
+  group: '463'
+  clasz: '4638'
+  description: Comerț cu ridicata specializat al altor alimente, inclusiv pește, crustacee și moluște
+clasz_4639:
+  section: G
+  division: '46'
+  group: '463'
+  clasz: '4639'
+  description: Comerț cu ridicata nespecializat de produse alimentare, băuturi și tutun
+clasz_4641:
+  section: G
+  division: '46'
+  group: '464'
+  clasz: '4641'
+  description: Comerț cu ridicata al produselor textile
+clasz_4642:
+  section: G
+  division: '46'
+  group: '464'
+  clasz: '4642'
+  description: Comerț cu ridicata al îmbrăcămintei și încălțămintei
+clasz_4643:
+  section: G
+  division: '46'
+  group: '464'
+  clasz: '4643'
+  description: Comerț cu ridicata al aparatelor electrice de uz gospodăresc, al aparatelor de radio și televizoarelor
+clasz_4644:
+  section: G
+  division: '46'
+  group: '464'
+  clasz: '4644'
+  description: Comerț cu ridicata al produselor din ceramică, sticlărie, și produse de întreținere
+clasz_4645:
+  section: G
+  division: '46'
+  group: '464'
+  clasz: '4645'
+  description: Comerț cu ridicata al produselor cosmetice și de parfumerie
+clasz_4646:
+  section: G
+  division: '46'
+  group: '464'
+  clasz: '4646'
+  description: Comerț cu ridicata al produselor farmaceutice
+clasz_4647:
+  section: G
+  division: '46'
+  group: '464'
+  clasz: '4647'
+  description: Comerț cu ridicata al mobilei, covoarelor și a articolelor de iluminat
+clasz_4648:
+  section: G
+  division: '46'
+  group: '464'
+  clasz: '4648'
+  description: Comerț cu ridicata al ceasurilor și bijuteriilor
+clasz_4649:
+  section: G
+  division: '46'
+  group: '464'
+  clasz: '4649'
+  description: Comerț cu ridicata al altor bunuri de uz gospodăresc
+clasz_4651:
+  section: G
+  division: '46'
+  group: '465'
+  clasz: '4651'
+  description: Comerț cu ridicata al calculatoarelor, echipamentelor periferice și software-ului
+clasz_4652:
+  section: G
+  division: '46'
+  group: '465'
+  clasz: '4652'
+  description: Comerț cu ridicata de componente și echipamente electronice și de telecomunicații
+clasz_4661:
+  section: G
+  division: '46'
+  group: '466'
+  clasz: '4661'
+  description: Comerț cu ridicata al mașinilor agricole, echipamentelor și furniturilor
+clasz_4662:
+  section: G
+  division: '46'
+  group: '466'
+  clasz: '4662'
+  description: Comerț cu ridicata al mașinilor-unelte
+clasz_4663:
+  section: G
+  division: '46'
+  group: '466'
+  clasz: '4663'
+  description: Comerț cu ridicata al mașinilor pentru industria minieră și construcții
+clasz_4664:
+  section: G
+  division: '46'
+  group: '466'
+  clasz: '4664'
+  description: Comerț cu ridicata al mașinilor pentru industria textilă și al mașinilor de cusut și de tricotat
+clasz_4665:
+  section: G
+  division: '46'
+  group: '466'
+  clasz: '4665'
+  description: Comerț cu ridicata al mobilei de birou
+clasz_4666:
+  section: G
+  division: '46'
+  group: '466'
+  clasz: '4666'
+  description: Comerț cu ridicata al altor mașini și echipamente de birou
+clasz_4669:
+  section: G
+  division: '46'
+  group: '466'
+  clasz: '4669'
+  description: Comerț cu ridicata al altor mașini și echipamente
+clasz_4671:
+  section: G
+  division: '46'
+  group: '467'
+  clasz: '4671'
+  description: Comerț cu ridicata al combustibililor solizi, lichizi și gazoși și al produselor derivate
+clasz_4672:
+  section: G
+  division: '46'
+  group: '467'
+  clasz: '4672'
+  description: Comerț cu ridicata al metalelor și minereurilor metalice
+clasz_4673:
+  section: G
+  division: '46'
+  group: '467'
+  clasz: '4673'
+  description: Comerț cu ridicata al materialului lemnos și a materialelor de construcție și echipamentelor sanitare
+clasz_4674:
+  section: G
+  division: '46'
+  group: '467'
+  clasz: '4674'
+  description: Comerț cu ridicata al echipamentelor și furniturilor de fierărie pentru instalații sanitare și de încălzire
+clasz_4675:
+  section: G
+  division: '46'
+  group: '467'
+  clasz: '4675'
+  description: Comerț cu ridicata al produselor chimice
+clasz_4676:
+  section: G
+  division: '46'
+  group: '467'
+  clasz: '4676'
+  description: Comerț cu ridicata al altor produse intermediare
+clasz_4677:
+  section: G
+  division: '46'
+  group: '467'
+  clasz: '4677'
+  description: Comerț cu ridicata al deșeurilor și resturilor
+clasz_4690:
+  section: G
+  division: '46'
+  group: '469'
+  clasz: '4690'
+  description: Comerț cu ridicata nespecializat
+clasz_4711:
+  section: G
+  division: '47'
+  group: '471'
+  clasz: '4711'
+  description: Comerț cu amănuntul în magazine nespecializate, cu vânzare predominantă de produse alimentare, băuturi și tutun
+clasz_4719:
+  section: G
+  division: '47'
+  group: '471'
+  clasz: '4719'
+  description: Comerț cu amănuntul în magazine nespecializate, cu vânzare predominantă de produse nealimentare
+clasz_4721:
+  section: G
+  division: '47'
+  group: '472'
+  clasz: '4721'
+  description: Comerț cu amănuntul al fructelor și legumelor proaspete, în magazine specializate
+clasz_4722:
+  section: G
+  division: '47'
+  group: '472'
+  clasz: '4722'
+  description: Comerț cu amănuntul al cărnii și al produselor din carne, în magazine specializate
+clasz_4723:
+  section: G
+  division: '47'
+  group: '472'
+  clasz: '4723'
+  description: Comerț cu amănuntul al peștelui, crustaceelor și moluștelor, în magazine specializate
+clasz_4724:
+  section: G
+  division: '47'
+  group: '472'
+  clasz: '4724'
+  description: Comerț cu amănuntul al pâinii, produselor de patiserie și produselor zaharoase, în magazine specializate
+clasz_4725:
+  section: G
+  division: '47'
+  group: '472'
+  clasz: '4725'
+  description: Comerț cu amănuntul al băuturilor, în magazine specializate
+clasz_4726:
+  section: G
+  division: '47'
+  group: '472'
+  clasz: '4726'
+  description: Comerț cu amănuntul al produselor din tutun, în magazine specializate
+clasz_4729:
+  section: G
+  division: '47'
+  group: '472'
+  clasz: '4729'
+  description: Comerț cu amănuntul al altor produse alimentare, în magazine specializate
+clasz_4730:
+  section: G
+  division: '47'
+  group: '473'
+  clasz: '4730'
+  description: Comerț cu amănuntul al carburanților pentru autovehicule în magazine specializate
+clasz_4741:
+  section: G
+  division: '47'
+  group: '474'
+  clasz: '4741'
+  description: Comerț cu amănuntul al calculatoarelor, unităților periferice și software-ului în magazine specializate
+clasz_4742:
+  section: G
+  division: '47'
+  group: '474'
+  clasz: '4742'
+  description: Comerț cu amănuntul al echipamentului pentru telecomunicații în magazine specializate
+clasz_4743:
+  section: G
+  division: '47'
+  group: '474'
+  clasz: '4743'
+  description: Comerț cu amănuntul al echipamentelor audio/video în magazine specializate
+clasz_4751:
+  section: G
+  division: '47'
+  group: '475'
+  clasz: '4751'
+  description: Comerț cu amănuntul al textilelor, în magazine specializate
+clasz_4752:
+  section: G
+  division: '47'
+  group: '475'
+  clasz: '4752'
+  description: Comerț cu amănuntul al articolelor de fierărie, al articolelor din sticlă și a celor pentru vopsit, în magazine specializate
+clasz_4753:
+  section: G
+  division: '47'
+  group: '475'
+  clasz: '4753'
+  description: Comerț cu amănuntul al covoarelor, carpetelor, tapetelor și a altor acoperitoare de podea, în magazine specializate
+clasz_4754:
+  section: G
+  division: '47'
+  group: '475'
+  clasz: '4754'
+  description: Comerț cu amănuntul al articolelor și aparatelor electrocasnice, în magazine specializate
+clasz_4759:
+  section: G
+  division: '47'
+  group: '475'
+  clasz: '4759'
+  description: Comerț cu amănuntul al mobilei, al articolelor de iluminat și al articolelor de uz casnic n.c.a., în magazine specializate
+clasz_4761:
+  section: G
+  division: '47'
+  group: '476'
+  clasz: '4761'
+  description: Comerț cu amănuntul al cărților, în magazine specializate
+clasz_4762:
+  section: G
+  division: '47'
+  group: '476'
+  clasz: '4762'
+  description: Comerț cu amănuntul al ziarelor și articolelor de papetărie, în magazine specializate
+clasz_4763:
+  section: G
+  division: '47'
+  group: '476'
+  clasz: '4763'
+  description: Comerț cu amănuntul al discurilor și benzilor magnetice cu sau fără înregistrări audio/video, în magazine specializate
+clasz_4764:
+  section: G
+  division: '47'
+  group: '476'
+  clasz: '4764'
+  description: Comerț cu amănuntul al echipamentelor sportive, în magazine specializate
+clasz_4765:
+  section: G
+  division: '47'
+  group: '476'
+  clasz: '4765'
+  description: Comerț cu amănuntul al jocurilor și jucăriilor, în magazine specializate
+clasz_4771:
+  section: G
+  division: '47'
+  group: '477'
+  clasz: '4771'
+  description: Comerț cu amănuntul al îmbrăcămintei, în magazine specializate
+clasz_4772:
+  section: G
+  division: '47'
+  group: '477'
+  clasz: '4772'
+  description: Comerț cu amănuntul al încălțămintei și articolelor din piele, în magazine specializate
+clasz_4773:
+  section: G
+  division: '47'
+  group: '477'
+  clasz: '4773'
+  description: Comerț cu amănuntul al produselor farmaceutice, în magazine specializate
+clasz_4774:
+  section: G
+  division: '47'
+  group: '477'
+  clasz: '4774'
+  description: Comerț cu amănuntul al articolelor medicale și ortopedice, în magazine specializate
+clasz_4775:
+  section: G
+  division: '47'
+  group: '477'
+  clasz: '4775'
+  description: Comerț cu amănuntul al produselor cosmetice și de parfumerie, în magazine specializate
+clasz_4776:
+  section: G
+  division: '47'
+  group: '477'
+  clasz: '4776'
+  description: Comerț cu amănuntul al florilor, plantelor și semințelor; comerț cu amănuntul al animalelor de companie și a hranei pentru acestea, în magazine specializate
+clasz_4777:
+  section: G
+  division: '47'
+  group: '477'
+  clasz: '4777'
+  description: Comerț cu amănuntul al ceasurilor și bijuteriilor, în magazine specializate
+clasz_4778:
+  section: G
+  division: '47'
+  group: '477'
+  clasz: '4778'
+  description: Comerț cu amănuntul al altor bunuri noi, în magazine specializate
+clasz_4779:
+  section: G
+  division: '47'
+  group: '477'
+  clasz: '4779'
+  description: Comerț cu amănuntul al bunurilor de ocazie vândute prin magazine
+clasz_4781:
+  section: G
+  division: '47'
+  group: '478'
+  clasz: '4781'
+  description: Comerț cu amănuntul al produselor alimentare, băuturilor și produselor din tutun efectuat prin standuri, chioșcuri și piețe
+clasz_4782:
+  section: G
+  division: '47'
+  group: '478'
+  clasz: '4782'
+  description: Comerț cu amănuntul al textilelor, îmbrăcămintei și încălțămintei efectuat prin standuri, chioșcuri și piețe
+clasz_4789:
+  section: G
+  division: '47'
+  group: '478'
+  clasz: '4789'
+  description: Comerț cu amănuntul prin standuri, chioșcuri și piețe al altor produse
+clasz_4791:
+  section: G
+  division: '47'
+  group: '479'
+  clasz: '4791'
+  description: Comerț cu amănuntul prin intermediul caselor de comenzi sau prin Internet
+clasz_4799:
+  section: G
+  division: '47'
+  group: '479'
+  clasz: '4799'
+  description: Comerț cu amănuntul efectuat în afara magazinelor standurilor, chioșcurilor și piețelor SECȚIUNEA H - TRANSPORT ȘI DEPOZITARE
+clasz_4910:
+  section: H
+  division: '49'
+  group: '491'
+  clasz: '4910'
+  description: Transporturi interurbane de călători pe calea ferată
+clasz_4920:
+  section: H
+  division: '49'
+  group: '492'
+  clasz: '4920'
+  description: Transporturi de marfă pe calea ferată
+clasz_4931:
+  section: H
+  division: '49'
+  group: '493'
+  clasz: '4931'
+  description: Transporturi urbane, suburbane și metropolitane de călători
+clasz_4932:
+  section: H
+  division: '49'
+  group: '493'
+  clasz: '4932'
+  description: Transporturi cu taxiuri
+clasz_4939:
+  section: H
+  division: '49'
+  group: '493'
+  clasz: '4939'
+  description: Alte transporturi terestre de călători n.c.a.
+clasz_4941:
+  section: H
+  division: '49'
+  group: '494'
+  clasz: '4941'
+  description: Transporturi rutiere de mărfuri
+clasz_4942:
+  section: H
+  division: '49'
+  group: '494'
+  clasz: '4942'
+  description: Servicii de mutare
+clasz_4950:
+  section: H
+  division: '49'
+  group: '495'
+  clasz: '4950'
+  description: Transporturi prin conducte
+clasz_5010:
+  section: H
+  division: '50'
+  group: '501'
+  clasz: '5010'
+  description: Transporturi maritime și costiere de pasageri
+clasz_5020:
+  section: H
+  division: '50'
+  group: '502'
+  clasz: '5020'
+  description: Transporturi maritime și costiere de marfă
+clasz_5030:
+  section: H
+  division: '50'
+  group: '503'
+  clasz: '5030'
+  description: Transportul de pasageri pe căi navigabile interioare
+clasz_5040:
+  section: H
+  division: '50'
+  group: '504'
+  clasz: '5040'
+  description: Transportul de marfă pe căi navigabile interioare
+clasz_5110:
+  section: H
+  division: '51'
+  group: '511'
+  clasz: '5110'
+  description: Transporturi aeriene de pasageri
+clasz_5121:
+  section: H
+  division: '51'
+  group: '512'
+  clasz: '5121'
+  description: Transporturi aeriene de marfă
+clasz_5122:
+  section: H
+  division: '51'
+  group: '512'
+  clasz: '5122'
+  description: Transporturi spațiale
+clasz_5210:
+  section: H
+  division: '52'
+  group: '521'
+  clasz: '5210'
+  description: Depozitări
+clasz_5221:
+  section: H
+  division: '52'
+  group: '522'
+  clasz: '5221'
+  description: Activități de servicii anexe pentru transporturi terestre
+clasz_5222:
+  section: H
+  division: '52'
+  group: '522'
+  clasz: '5222'
+  description: Activități de servicii anexe transporturilor pe apă
+clasz_5223:
+  section: H
+  division: '52'
+  group: '522'
+  clasz: '5223'
+  description: Activități de servicii anexe transporturilor aeriene
+clasz_5224:
+  section: H
+  division: '52'
+  group: '522'
+  clasz: '5224'
+  description: Manipulări
+clasz_5229:
+  section: H
+  division: '52'
+  group: '522'
+  clasz: '5229'
+  description: Alte activități anexe transporturilor
+clasz_5310:
+  section: H
+  division: '53'
+  group: '531'
+  clasz: '5310'
+  description: Activități poștale desfășurate sub obligativitatea serviciului universal
+clasz_5320:
+  section: H
+  division: '53'
+  group: '532'
+  clasz: '5320'
+  description: Alte activități poștale și de curier similare
+clasz_5510:
+  section: I
+  division: '55'
+  group: '551'
+  clasz: '5510'
+  description: Hoteluri și alte facilități de cazare similare
+clasz_5520:
+  section: I
+  division: '55'
+  group: '552'
+  clasz: '5520'
+  description: Facilități de cazare pentru vacanțe și perioade de scurtă durată
+clasz_5530:
+  section: I
+  division: '55'
+  group: '553'
+  clasz: '5530'
+  description: Parcuri pentru rulote, campinguri și tabere
+clasz_5590:
+  section: I
+  division: '55'
+  group: '559'
+  clasz: '5590'
+  description: Alte servicii de cazare
+clasz_5610:
+  section: I
+  division: '56'
+  group: '561'
+  clasz: '5610'
+  description: Restaurante
+clasz_5621:
+  section: I
+  division: '56'
+  group: '562'
+  clasz: '5621'
+  description: Activități de alimentație (catering) pentru evenimente
+clasz_5629:
+  section: I
+  division: '56'
+  group: '562'
+  clasz: '5629'
+  description: Alte servicii de alimentație n.c.a.
+clasz_5630:
+  section: I
+  division: '56'
+  group: '563'
+  clasz: '5630'
+  description: Baruri și alte activități de servire a băuturilor
+clasz_5811:
+  section: J
+  division: '58'
+  group: '581'
+  clasz: '5811'
+  description: Activități de editare a cărților
+clasz_5812:
+  section: J
+  division: '58'
+  group: '581'
+  clasz: '5812'
+  description: Activități de editarea de ghiduri, compendii, liste de adrese și similare
+clasz_5813:
+  section: J
+  division: '58'
+  group: '581'
+  clasz: '5813'
+  description: Activități de editare a ziarelor
+clasz_5814:
+  section: J
+  division: '58'
+  group: '581'
+  clasz: '5814'
+  description: Activități de editare a revistelor și periodicelor
+clasz_5819:
+  section: J
+  division: '58'
+  group: '581'
+  clasz: '5819'
+  description: Alte activități de editare
+clasz_5821:
+  section: J
+  division: '58'
+  group: '582'
+  clasz: '5821'
+  description: Activități de editare a jocurilor de calculator
+clasz_5829:
+  section: J
+  division: '58'
+  group: '582'
+  clasz: '5829'
+  description: Activități de editare a altor produse software
+clasz_5911:
+  section: J
+  division: '59'
+  group: '591'
+  clasz: '5911'
+  description: Activități de producție cinematografică, video și de programe de televiziune
+clasz_5912:
+  section: J
+  division: '59'
+  group: '591'
+  clasz: '5912'
+  description: Activități post-producție cinematografică, video și de programe de televiziune
+clasz_5913:
+  section: J
+  division: '59'
+  group: '591'
+  clasz: '5913'
+  description: Activități de distribuție a filmelor cinematografice, video și a programelor de televiziune
+clasz_5914:
+  section: J
+  division: '59'
+  group: '591'
+  clasz: '5914'
+  description: Proiecția de filme cinematografice
+clasz_5920:
+  section: J
+  division: '59'
+  group: '592'
+  clasz: '5920'
+  description: Activități de realizare a înregistrărilor audio și activități de editare muzicală
+clasz_6010:
+  section: J
+  division: '60'
+  group: '601'
+  clasz: '6010'
+  description: Activități de difuzare a programelor de radio
+clasz_6020:
+  section: J
+  division: '60'
+  group: '602'
+  clasz: '6020'
+  description: Activități de difuzare a programelor de televiziune
+clasz_6110:
+  section: J
+  division: '61'
+  group: '611'
+  clasz: '6110'
+  description: Activități de telecomunicații prin rețele cu cablu
+clasz_6120:
+  section: J
+  division: '61'
+  group: '612'
+  clasz: '6120'
+  description: Activități de telecomunicații prin rețele fără cablu (exclusiv prin satelit)
+clasz_6130:
+  section: J
+  division: '61'
+  group: '613'
+  clasz: '6130'
+  description: Activități de telecomunicații prin satelit
+clasz_6190:
+  section: J
+  division: '61'
+  group: '619'
+  clasz: '6190'
+  description: Alte activități de telecomunicații
+clasz_6201:
+  section: J
+  division: '62'
+  group: '620'
+  clasz: '6201'
+  description: Activități de realizare a soft-ului la comandă (software orientat client)
+clasz_6202:
+  section: J
+  division: '62'
+  group: '620'
+  clasz: '6202'
+  description: Activități de consultanță în tehnologia informației
+clasz_6203:
+  section: J
+  division: '62'
+  group: '620'
+  clasz: '6203'
+  description: Activități de management (gestiune și exploatare) a mijloacelor de calcul
+clasz_6209:
+  section: J
+  division: '62'
+  group: '620'
+  clasz: '6209'
+  description: Alte activități de servicii privind tehnologia informației
+clasz_6311:
+  section: J
+  division: '63'
+  group: '631'
+  clasz: '6311'
+  description: Prelucrarea datelor, administrarea paginilor web și activități conexe
+clasz_6312:
+  section: J
+  division: '63'
+  group: '631'
+  clasz: '6312'
+  description: Activități ale portalurilor web
+clasz_6391:
+  section: J
+  division: '63'
+  group: '639'
+  clasz: '6391'
+  description: Activități ale agențiilor de știri
+clasz_6399:
+  section: J
+  division: '63'
+  group: '639'
+  clasz: '6399'
+  description: Alte activități de servicii informaționale n.c.a.
+clasz_6411:
+  section: K
+  division: '64'
+  group: '641'
+  clasz: '6411'
+  description: Activități ale băncii centrale (naționale)
+clasz_6419:
+  section: K
+  division: '64'
+  group: '641'
+  clasz: '6419'
+  description: Alte activități de intermedieri monetare
+clasz_6420:
+  section: K
+  division: '64'
+  group: '642'
+  clasz: '6420'
+  description: Activități ale holdingurilor
+clasz_6430:
+  section: K
+  division: '64'
+  group: '643'
+  clasz: '6430'
+  description: Fonduri mutuale și alte entități financiare similare
+clasz_6491:
+  section: K
+  division: '64'
+  group: '649'
+  clasz: '6491'
+  description: Leasing financiar
+clasz_6492:
+  section: K
+  division: '64'
+  group: '649'
+  clasz: '6492'
+  description: Alte activități de creditare
+clasz_6499:
+  section: K
+  division: '64'
+  group: '649'
+  clasz: '6499'
+  description: Alte intermedieri financiare n.c.a.
+clasz_6511:
+  section: K
+  division: '65'
+  group: '651'
+  clasz: '6511'
+  description: Activități de asigurări de viață
+clasz_6512:
+  section: K
+  division: '65'
+  group: '651'
+  clasz: '6512'
+  description: Alte activități de asigurări (exceptând asigurările de viață)
+clasz_6520:
+  section: K
+  division: '65'
+  group: '652'
+  clasz: '6520'
+  description: Activități de reasigurare
+clasz_6530:
+  section: K
+  division: '65'
+  group: '653'
+  clasz: '6530'
+  description: Activități ale fondurilor de pensii (cu excepția celor din sistemul public de asigurări sociale)
+clasz_6611:
+  section: K
+  division: '66'
+  group: '661'
+  clasz: '6611'
+  description: Administrarea piețelor financiare
+clasz_6612:
+  section: K
+  division: '66'
+  group: '661'
+  clasz: '6612'
+  description: Activități de intermediere a tranzacțiilor financiare
+clasz_6619:
+  section: K
+  division: '66'
+  group: '661'
+  clasz: '6619'
+  description: Activități auxiliare intermedierilor financiare, exclusiv activități de asigurări și fonduri de pensii
+clasz_6621:
+  section: K
+  division: '66'
+  group: '662'
+  clasz: '6621'
+  description: Activități de evaluare a riscului de asigurare și a pagubelor
+clasz_6622:
+  section: K
+  division: '66'
+  group: '662'
+  clasz: '6622'
+  description: Activități ale agenților și broker-ilor de asigurări
+clasz_6629:
+  section: K
+  division: '66'
+  group: '662'
+  clasz: '6629'
+  description: Alte activități auxiliare de asigurări și fonduri de pensii
+clasz_6630:
+  section: K
+  division: '66'
+  group: '663'
+  clasz: '6630'
+  description: Activități de administrare a fondurilor
+clasz_6810:
+  section: L
+  division: '68'
+  group: '681'
+  clasz: '6810'
+  description: Cumpărarea și vânzarea de bunuri imobiliare proprii
+clasz_6820:
+  section: L
+  division: '68'
+  group: '682'
+  clasz: '6820'
+  description: Închirierea și subînchirierea bunurilor imobiliare proprii sau închiriate
+clasz_6831:
+  section: L
+  division: '68'
+  group: '683'
+  clasz: '6831'
+  description: Agenții imobiliare
+clasz_6832:
+  section: L
+  division: '68'
+  group: '683'
+  clasz: '6832'
+  description: Administrarea imobilelor pe bază de comision sau contract
+clasz_6910:
+  section: M
+  division: '69'
+  group: '691'
+  clasz: '6910'
+  description: Activități juridice
+clasz_6920:
+  section: M
+  division: '69'
+  group: '692'
+  clasz: '6920'
+  description: Activități de contabilitate și audit financiar; consultanță în domeniul fiscal
+clasz_7010:
+  section: M
+  division: '70'
+  group: '701'
+  clasz: '7010'
+  description: Activități ale direcțiilor (centralelor), birourilor administrative centralizate
+clasz_7021:
+  section: M
+  division: '70'
+  group: '702'
+  clasz: '7021'
+  description: Activități de consultanță în domeniul relațiilor publice și al comunicării
+clasz_7022:
+  section: M
+  division: '70'
+  group: '702'
+  clasz: '7022'
+  description: Activități de consultanță pentru afaceri și management
+clasz_7111:
+  section: M
+  division: '71'
+  group: '711'
+  clasz: '7111'
+  description: Activități de arhitectură
+clasz_7112:
+  section: M
+  division: '71'
+  group: '711'
+  clasz: '7112'
+  description: Activități de inginerie și consultanță tehnică legate de acestea
+clasz_7120:
+  section: M
+  division: '71'
+  group: '712'
+  clasz: '7120'
+  description: Activități de testări și analize tehnice
+clasz_7211:
+  section: M
+  division: '72'
+  group: '721'
+  clasz: '7211'
+  description: Cercetare-dezvoltare în biotehnologie
+clasz_7219:
+  section: M
+  division: '72'
+  group: '721'
+  clasz: '7219'
+  description: Cercetare-dezvoltare în alte științe naturale și inginerie
+clasz_7220:
+  section: M
+  division: '72'
+  group: '722'
+  clasz: '7220'
+  description: Cercetare-dezvoltare în științe sociale și umaniste
+clasz_7311:
+  section: M
+  division: '73'
+  group: '731'
+  clasz: '7311'
+  description: Activități ale agențiilor de publicitate
+clasz_7312:
+  section: M
+  division: '73'
+  group: '731'
+  clasz: '7312'
+  description: Servicii de reprezentare media
+clasz_7320:
+  section: M
+  division: '73'
+  group: '732'
+  clasz: '7320'
+  description: Activități de studiere a pieței și de sondare a opiniei publice
+clasz_7410:
+  section: M
+  division: '74'
+  group: '741'
+  clasz: '7410'
+  description: Activități de design specializat
+clasz_7420:
+  section: M
+  division: '74'
+  group: '742'
+  clasz: '7420'
+  description: Activități fotografice
+clasz_7430:
+  section: M
+  division: '74'
+  group: '743'
+  clasz: '7430'
+  description: Activități de traducere scrisă și orală (interpreți)
+clasz_7490:
+  section: M
+  division: '74'
+  group: '749'
+  clasz: '7490'
+  description: Alte activități profesionale, științifice și tehnice n.c.a.
+clasz_7500:
+  section: M
+  division: '75'
+  group: '750'
+  clasz: '7500'
+  description: Activități veterinare Activități de închiriere și leasing
+clasz_7711:
+  section: N
+  division: '75'
+  group: '771'
+  clasz: '7711'
+  description: Activități de închiriere și leasing cu autoturisme și autovehicule rutiere ușoare
+clasz_7712:
+  section: N
+  division: '75'
+  group: '771'
+  clasz: '7712'
+  description: Activități de închiriere și leasing cu autovehicule rutiere grele
+clasz_7721:
+  section: N
+  division: '75'
+  group: '772'
+  clasz: '7721'
+  description: Activități de închiriere și leasing cu bunuri recreaționale și echipament sportiv
+clasz_7722:
+  section: N
+  division: '75'
+  group: '772'
+  clasz: '7722'
+  description: Închirierea de casete video și discuri (CD-uri, DVD-uri)
+clasz_7729:
+  section: N
+  division: '75'
+  group: '772'
+  clasz: '7729'
+  description: Activități de închiriere și leasing cu alte bunuri personale și gospodărești n.c.a.
+clasz_7731:
+  section: N
+  division: '75'
+  group: '773'
+  clasz: '7731'
+  description: Activități de închiriere și leasing cu mașini și echipamente agricole
+clasz_7732:
+  section: N
+  division: '75'
+  group: '773'
+  clasz: '7732'
+  description: Activități de închiriere și leasing cu mașini și echipamente pentru construcții
+clasz_7733:
+  section: N
+  division: '75'
+  group: '773'
+  clasz: '7733'
+  description: Activități de închiriere și leasing cu mașini și echipamente de birou (inclusiv calculatoare)
+clasz_7734:
+  section: N
+  division: '75'
+  group: '773'
+  clasz: '7734'
+  description: Activități de închiriere și leasing cu echipamente de transport pe apă
+clasz_7735:
+  section: N
+  division: '75'
+  group: '773'
+  clasz: '7735'
+  description: Activități de închiriere și leasing cu echipamente de transport aerian
+clasz_7739:
+  section: N
+  division: '75'
+  group: '773'
+  clasz: '7739'
+  description: Activități de închirierea și leasing cu alte mașini, echipamente și bunuri tangibile n.c.a.
+clasz_7740:
+  section: N
+  division: '75'
+  group: '774'
+  clasz: '7740'
+  description: Leasing cu bunuri intangibile (exclusiv financiare)
+clasz_7810:
+  section: N
+  division: '78'
+  group: '781'
+  clasz: '7810'
+  description: Activități ale agențiilor de plasare a forței de muncă
+clasz_7820:
+  section: N
+  division: '78'
+  group: '782'
+  clasz: '7820'
+  description: Activități de contractare, pe baze temporare, a personalului
+clasz_7830:
+  section: N
+  division: '78'
+  group: '783'
+  clasz: '7830'
+  description: Servicii de furnizare și management a forței de muncă
+clasz_7911:
+  section: N
+  division: '79'
+  group: '791'
+  clasz: '7911'
+  description: Activități ale agențiilor turistice
+clasz_7912:
+  section: N
+  division: '79'
+  group: '791'
+  clasz: '7912'
+  description: Activități ale tur-operatorilor
+clasz_7990:
+  section: N
+  division: '79'
+  group: '799'
+  clasz: '7990'
+  description: Alte servicii de rezervare și asistență turistică
+clasz_8010:
+  section: N
+  division: '80'
+  group: '801'
+  clasz: '8010'
+  description: Activități de protecție și gardă
+clasz_8020:
+  section: N
+  division: '80'
+  group: '802'
+  clasz: '8020'
+  description: Activități de servicii privind sistemele de securizare
+clasz_8030:
+  section: N
+  division: '80'
+  group: '803'
+  clasz: '8030'
+  description: Activități de investigații
+clasz_8110:
+  section: N
+  division: '81'
+  group: '811'
+  clasz: '8110'
+  description: Activități de servicii suport combinate
+clasz_8121:
+  section: N
+  division: '81'
+  group: '812'
+  clasz: '8121'
+  description: Activități generale de curățenie a clădirilor
+clasz_8122:
+  section: N
+  division: '81'
+  group: '812'
+  clasz: '8122'
+  description: Activități specializate de curățenie
+clasz_8129:
+  section: N
+  division: '81'
+  group: '812'
+  clasz: '8129'
+  description: Alte activități de curățenie
+clasz_8130:
+  section: N
+  division: '81'
+  group: '813'
+  clasz: '8130'
+  description: Activități de întreținere peisagistică
+clasz_8211:
+  section: N
+  division: '82'
+  group: '821'
+  clasz: '8211'
+  description: Activități combinate de secretariat
+clasz_8219:
+  section: N
+  division: '82'
+  group: '821'
+  clasz: '8219'
+  description: Activități de fotocopiere, de pregătire a documentelor și alte activități specializate de secretariat
+clasz_8220:
+  section: N
+  division: '82'
+  group: '822'
+  clasz: '8220'
+  description: Activități ale centrelor de intermediere telefonică (call center)
+clasz_8230:
+  section: N
+  division: '82'
+  group: '823'
+  clasz: '8230'
+  description: Activități de organizare a expozițiilor, târgurilor și congreselor
+clasz_8291:
+  section: N
+  division: '82'
+  group: '829'
+  clasz: '8291'
+  description: Activități ale agențiilor de colectare și a birourilor (oficiilor) de raportare a creditului
+clasz_8292:
+  section: N
+  division: '82'
+  group: '829'
+  clasz: '8292'
+  description: Activități de ambalare
+clasz_8299:
+  section: N
+  division: '82'
+  group: '829'
+  clasz: '8299'
+  description: Alte activități de servicii suport pentru întreprinderi n.c.a.
+clasz_8411:
+  section: O
+  division: '84'
+  group: '841'
+  clasz: '8411'
+  description: Servicii de administrație publică generală
+clasz_8412:
+  section: O
+  division: '84'
+  group: '841'
+  clasz: '8412'
+  description: Reglementarea activităților organismelor care prestează servicii în domeniul îngrijirii sănătății, învățământului, culturii și al altor activități sociale, exclusiv protecția socială
+clasz_8413:
+  section: O
+  division: '84'
+  group: '841'
+  clasz: '8413'
+  description: Reglementarea și eficientizarea activităților economice
+clasz_8421:
+  section: O
+  division: '84'
+  group: '842'
+  clasz: '8421'
+  description: Activități de afaceri externe
+clasz_8422:
+  section: O
+  division: '84'
+  group: '842'
+  clasz: '8422'
+  description: Activități de apărare națională
+clasz_8423:
+  section: O
+  division: '84'
+  group: '842'
+  clasz: '8423'
+  description: Activități de justiție
+clasz_8424:
+  section: O
+  division: '84'
+  group: '842'
+  clasz: '8424'
+  description: Activități de ordine publică și de protecție civilă
+clasz_8425:
+  section: O
+  division: '84'
+  group: '842'
+  clasz: '8425'
+  description: Activități de luptă împotriva incendiilor și de prevenire a acestora
+clasz_8430:
+  section: O
+  division: '84'
+  group: '843'
+  clasz: '8430'
+  description: Activități de proiecție socială obligatorie
+clasz_8510:
+  section: P
+  division: '84'
+  group: '843'
+  clasz: '8510'
+  description: Învățământ preșcolar
+clasz_8520:
+  section: P
+  division: '84'
+  group: '852'
+  clasz: '8520'
+  description: Învățământ primar
+clasz_8531:
+  section: P
+  division: '84'
+  group: '853'
+  clasz: '8531'
+  description: Învățământ secundar general
+clasz_8532:
+  section: P
+  division: '84'
+  group: '853'
+  clasz: '8532'
+  description: Învățământ secundar, tehnic sau profesional
+clasz_8541:
+  section: P
+  division: '84'
+  group: '854'
+  clasz: '8541'
+  description: Învățământ superior non-universitar
+clasz_8542:
+  section: P
+  division: '84'
+  group: '854'
+  clasz: '8542'
+  description: Învățământ superior universitar
+clasz_8551:
+  section: P
+  division: '84'
+  group: '855'
+  clasz: '8551'
+  description: Învățământ în domeniul sportiv și recreațional
+clasz_8552:
+  section: P
+  division: '84'
+  group: '855'
+  clasz: '8552'
+  description: Învățământ în domeniul cultural (limbi străine, muzică, teatru, dans, arte plastice etc.)
+clasz_8553:
+  section: P
+  division: '84'
+  group: '855'
+  clasz: '8553'
+  description: Școli de conducere (pilotaj)
+clasz_8559:
+  section: P
+  division: '84'
+  group: '855'
+  clasz: '8559'
+  description: Alte forme de învățământ n.c.a. învățământ
+clasz_8610:
+  section: Q
+  division: '86'
+  group: '861'
+  clasz: '8610'
+  description: Activități de asistență spitalicească ambulatorie și stomatologică
+clasz_8621:
+  section: Q
+  division: '86'
+  group: '862'
+  clasz: '8621'
+  description: Activități de asistență medicală generală
+clasz_8622:
+  section: Q
+  division: '86'
+  group: '862'
+  clasz: '8622'
+  description: Activități de asistență medicală specializată
+clasz_8623:
+  section: Q
+  division: '86'
+  group: '862'
+  clasz: '8623'
+  description: Activități de asistență stomatologică
+clasz_8690:
+  section: Q
+  division: '86'
+  group: '869'
+  clasz: '8690'
+  description: Alte activități referitoare la sănătatea umană
+clasz_8710:
+  section: Q
+  division: '87'
+  group: '871'
+  clasz: '8710'
+  description: Activități ale centrelor de îngrijire medicală
+clasz_8720:
+  section: Q
+  division: '87'
+  group: '872'
+  clasz: '8720'
+  description: Activități ale centrelor de recuperare psihică și de dezintoxicare, exclusiv spitale
+clasz_8730:
+  section: Q
+  division: '87'
+  group: '873'
+  clasz: '8730'
+  description: Activități ale căminelor de bătrâni și ale căminelor pentru persoane aflate în incapacitate de a se îngriji singure
+clasz_8790:
+  section: Q
+  division: '87'
+  group: '879'
+  clasz: '8790'
+  description: Alte activități de asistență socială, cu cazare n.c.a.
+clasz_8810:
+  section: Q
+  division: '88'
+  group: '881'
+  clasz: '8810'
+  description: Activități de asistență socială, fără cazare, pentru bătrâni și pentru persoane aflate în incapacitate de a se îngriji singure
+clasz_8891:
+  section: Q
+  division: '88'
+  group: '889'
+  clasz: '8891'
+  description: Activități de îngrijire zilnică pentru copii
+clasz_8899:
+  section: Q
+  division: '88'
+  group: '889'
+  clasz: '8899'
+  description: Alte activități de asistență socială, fără cazare, n.c.a.
+clasz_9001:
+  section: R
+  division: '90'
+  group: '900'
+  clasz: '9001'
+  description: Activități de interpretare artistică (spectacole)
+clasz_9002:
+  section: R
+  division: '90'
+  group: '900'
+  clasz: '9002'
+  description: Activități suport pentru interpretarea artistică (spectacole)
+clasz_9003:
+  section: R
+  division: '90'
+  group: '900'
+  clasz: '9003'
+  description: Activități de creație artistică
+clasz_9004:
+  section: R
+  division: '90'
+  group: '900'
+  clasz: '9004'
+  description: Activități de gestionare a sălilor de spectacole
+clasz_9101:
+  section: R
+  division: '91'
+  group: '910'
+  clasz: '9101'
+  description: Activități ale bibliotecilor și arhivelor
+clasz_9102:
+  section: R
+  division: '91'
+  group: '910'
+  clasz: '9102'
+  description: Activități ale muzeelor
+clasz_9103:
+  section: R
+  division: '91'
+  group: '910'
+  clasz: '9103'
+  description: Gestionarea monumentelor, clădirilor istorice și a altor obiective de interes turistic
+clasz_9104:
+  section: R
+  division: '91'
+  group: '910'
+  clasz: '9104'
+  description: Activități ale grădinilor zoologice, botanice și ale rezervațiilor naturale
+clasz_9200:
+  section: R
+  division: '92'
+  group: '920'
+  clasz: '9200'
+  description: Activități de jocuri de noroc și pariuri
+clasz_9311:
+  section: R
+  division: '93'
+  group: '931'
+  clasz: '9311'
+  description: Activități ale bazelor sportive
+clasz_9312:
+  section: R
+  division: '93'
+  group: '931'
+  clasz: '9312'
+  description: Activități ale cluburilor sportive
+clasz_9313:
+  section: R
+  division: '93'
+  group: '931'
+  clasz: '9313'
+  description: Activități ale centrelor de fitness
+clasz_9319:
+  section: R
+  division: '93'
+  group: '931'
+  clasz: '9319'
+  description: Alte activități sportive
+clasz_9321:
+  section: R
+  division: '93'
+  group: '932'
+  clasz: '9321'
+  description: Bâlciuri și parcuri de distracții
+clasz_9329:
+  section: R
+  division: '93'
+  group: '932'
+  clasz: '9329'
+  description: Alte activități recreative și distractive n.c.a.
+clasz_9411:
+  section: S
+  division: '94'
+  group: '941'
+  clasz: '9411'
+  description: Activități ale organizațiilor economice și patronale
+clasz_9412:
+  section: S
+  division: '94'
+  group: '941'
+  clasz: '9412'
+  description: Activități ale organizațiilor profesionale
+clasz_9420:
+  section: S
+  division: '94'
+  group: '942'
+  clasz: '9420'
+  description: Activități ale sindicatelor salariaților
+clasz_9491:
+  section: S
+  division: '94'
+  group: '949'
+  clasz: '9491'
+  description: Activități ale organizațiilor religioase
+clasz_9492:
+  section: S
+  division: '94'
+  group: '949'
+  clasz: '9492'
+  description: Activități ale organizațiilor politice
+clasz_9499:
+  section: S
+  division: '94'
+  group: '949'
+  clasz: '9499'
+  description: Activități ale altor organizații n.c.a.
+clasz_9511:
+  section: S
+  division: '95'
+  group: '951'
+  clasz: '9511'
+  description: Repararea calculatoarelor și a echipamentelor periferice
+clasz_9512:
+  section: S
+  division: '95'
+  group: '951'
+  clasz: '9512'
+  description: Repararea echipamentelor de comunicații
+clasz_9521:
+  section: S
+  division: '95'
+  group: '951'
+  clasz: '9521'
+  description: Repararea aparatelor electronice de uz casnic
+clasz_9522:
+  section: S
+  division: '95'
+  group: '951'
+  clasz: '9522'
+  description: Repararea dispozitivelor de uz gospodăresc și a echipamentelor pentru casa și grădină
+clasz_9523:
+  section: S
+  division: '95'
+  group: '951'
+  clasz: '9523'
+  description: Repararea încălțămintei și a articolelor din piele
+clasz_9524:
+  section: S
+  division: '95'
+  group: '951'
+  clasz: '9524'
+  description: Repararea mobilei și a furniturilor casnice
+clasz_9525:
+  section: S
+  division: '95'
+  group: '951'
+  clasz: '9525'
+  description: Repararea ceasurilor și a bijuteriilor
+clasz_9529:
+  section: S
+  division: '95'
+  group: '951'
+  clasz: '9529'
+  description: Repararea articolelor de uz personal și gospodăresc n.c.a.
+clasz_9601:
+  section: S
+  division: '96'
+  group: '960'
+  clasz: '9601'
+  description: Spălarea și curățarea (uscată) articolelor textile și a produselor din blană
+clasz_9602:
+  section: S
+  division: '96'
+  group: '960'
+  clasz: '9602'
+  description: Coafură și alte activități de înfrumusețare
+clasz_9603:
+  section: S
+  division: '96'
+  group: '960'
+  clasz: '9603'
+  description: Activități de pompe funebre și similare
+clasz_9604:
+  section: S
+  division: '96'
+  group: '960'
+  clasz: '9604'
+  description: Activități de întreținere corporală
+clasz_9609:
+  section: S
+  division: '96'
+  group: '960'
+  clasz: '9609'
+  description: Alte activități de servicii n.c.a.
+clasz_9700:
+  section: T
+  division: '97'
+  group: '970'
+  clasz: '9700'
+  description: Activități ale gospodăriilor private în calitate de angajator de personal casnic
+clasz_9810:
+  section: T
+  division: '98'
+  group: '981'
+  clasz: '9810'
+  description: Activități ale gospodăriilor private de producere de bunuri destinate consumului propriu
+clasz_9820:
+  section: T
+  division: '98'
+  group: '982'
+  clasz: '9820'
+  description: Activități ale gospodăriilor private de producere de servicii pentru scopuri proprii
+clasz_9900:
+  section: U
+  division: '99'
+  group: '990'
+  clasz: '9900'
+  description: Activități ale organizațiilor și organismelor extrateritoriale
 
-two:
-  :section: A
-  :division: '01'
-  :group: '011'
-  :clasz: '0112'
-  :description: Cultivarea orezului
