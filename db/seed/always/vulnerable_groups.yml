@@ -1,0 +1,50 @@
+poor:
+  description: Persoane sărace
+  subgroups: |
+    Copii săraci, mai ales aceia care trăiesc în familii cu mulți copii sau în familii monoparentale
+    Persoane sărace angajate, mai ales muncitori subcalificați (în principal din mediul rural); lucrători pe cont propriu atât în agricultură, cât și în alte domenii
+    Tineri șomeri și NEET (persoane care nu sunt angajate și nu sunt înscrise în sistemul de învățământ sau de formare profesională )
+    Persoane cu vârste între 50 și 64 de ani care nu sunt încadrate profesional și care sunt excluse din programele de asistență socială
+    Persoane vârstnice sărace, mai ales cele care locuiesc cu membri ai familiei aflați în întreținere și persoane vârstnice singure
+
+children:
+  description: Copii și tineri lipsiți de îngrijire și sprijin parental
+  subgroups: |
+    Copii abandonați în unități medicale
+    Copii care trăiesc în centre de plasament mari sau de calitate slabă
+    Tineri care părăsesc sistemul de protecție a copilului
+    Copii și tineri care trăiesc pe stradă
+    Copii cu părinți care lucrează în străinătate, mai ales aceia cu amândoi părinții în străinătate și cei care se confruntă cu separarea pe termen lung de părinții lor
+    Copii lipsiți de libertate
+    Mame adolescente
+
+elderly:
+  description: Persoane vârstnice singure sau dependente
+  subgroups: Persoane vârstnice care locuiesc singure și/sau sunt dependente și/sau care au nevoi complexe de îngrijire
+
+roma:
+  description: Romi
+  subgroups: Copii și adulți de etnie romă cu risc de a fi excluși din familii fără a avea un venit sustenabil
+
+persons_with_disabilities:
+  description: Persoane cu dizabilități
+  subgroups: Copii și adulți cu dizabilități, inclusiv persoane invalide și cu o concentrare pe persoanele cu nevoi complexe
+
+other:
+  description: Alte grupuri vulnerabile
+  subgroups: |
+    Persoane care suferă de dependență de alcool, droguri și alte substanțe toxice
+    Persoane lipsite de libertate sau aflate sub control judiciar
+    Persoane aflate în evidențele serviciilor de probațiune, față de care au fost dispuse măsuri sau sancțiuni neprivative de libertate (persoanele față de care s-a dispus amânarea aplicării pedepsei, suspendarea executării pedepsei sub supraveghere, liberarea condiționată - în cazul în care restul rămas neexecutat din pedeapsă este de 2 ani sau mai mare și persoanele față de care s-a dispus executarea pedepsei amenzii prin prestarea de muncă în folosul comunității)
+    Minori aflați în evidențele serviciilor de probațiune (minorii sancționați cu o măsură educativă neprivativă de libertate, față de care s-a dispus înlocuirea măsurii educative privative de liberate sau eliberarea din detenție)
+    Persoane fără domiciliu
+    Victime ale violenței domestice
+    Victime ale traficului de ființe umane
+    Refugiați și imigranți
+
+marginalized_communities:
+  description: Persoane care trăiesc în comunități marginalizate
+  subgroups: |
+    Comunitățile rurale sărace
+    Comunitățile urbane marginalizate
+    Comunități rome sărace și marginalizate
