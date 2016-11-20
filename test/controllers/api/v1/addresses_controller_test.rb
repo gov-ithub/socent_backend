@@ -23,4 +23,13 @@ class Api::V1::AddressesControllerTest < ActionDispatch::IntegrationTest
       assert_equal 'updated', address.city
     end
   end
+
+  test "should delete destroy" do
+    address = addresses(:one)
+    assert_difference 'Address.count', -1 do
+      delete api_v1_address_url(address)
+      assert_response :no_content
+    end
+  end
+
 end

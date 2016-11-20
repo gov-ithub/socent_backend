@@ -1,7 +1,7 @@
 class Api::V1::AddressesController < ApplicationController
   respond_to :json
 
-  before_action :set_address, only: [:show, :update]
+  before_action :set_address, only: [:show, :update, :destroy]
 
   def show
     respond_with @address
@@ -15,6 +15,11 @@ class Api::V1::AddressesController < ApplicationController
   def update
     @address.update(update_params)
     respond_with @address
+  end
+
+  def destroy
+    @address.destroy
+    head :no_content
   end
 
   # location response wants 'address' path helpers
