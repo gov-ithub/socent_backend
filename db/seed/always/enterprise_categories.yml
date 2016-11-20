@@ -1,7 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+<%['Societati cooperative de gradul 1',
+'Cooperative de credit',
+'Asociatii',
+'Fundatii',
+'Case de ajutor reciproc ale salariatilor',
+'Case de ajutor reciproc ale pensionarilor',
+'Societate agricola',
+'Federatii',
+'Uniuni de persoane juridice',
+'Alte categorii de persoane juridice'].each_with_index do |category, index| %>
+category_<%=index%>:
+  description: <%=category%>
 
-one:
-  description: A Category
+<% end %>
 
-two:
-  description: Something else
