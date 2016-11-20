@@ -4,6 +4,7 @@ class Enterprise < ApplicationRecord
   belongs_to :enterprise_category, optional: true
   belongs_to :entrepreneur, optional: true
   has_many :uploads, dependent: :delete_all
+  belongs_to :address, optional: true
 
   validates :number, uniqueness: true, presence: true
   validates :application_date, presence: true

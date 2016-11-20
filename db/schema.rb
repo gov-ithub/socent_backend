@@ -15,6 +15,20 @@ ActiveRecord::Schema.define(version: 20161121100917) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "addresses", force: :cascade do |t|
+    t.integer  "district_id"
+    t.string   "city"
+    t.string   "address"
+    t.string   "zipcode"
+    t.string   "phone"
+    t.string   "fax"
+    t.string   "email"
+    t.string   "website"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["district_id"], name: "index_addresses_on_district_id", using: :btree
+  end
+
   create_table "districts", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
@@ -47,6 +61,8 @@ ActiveRecord::Schema.define(version: 20161121100917) do
     t.integer  "status",                                default: 0, null: false
     t.datetime "created_at",                                        null: false
     t.datetime "updated_at",                                        null: false
+    t.integer  "address_id"
+    t.index ["address_id"], name: "index_enterprises_on_address_id", using: :btree
     t.index ["enterprise_category_id"], name: "index_enterprises_on_enterprise_category_id", using: :btree
     t.index ["entrepreneur_id"], name: "index_enterprises_on_entrepreneur_id", using: :btree
     t.index ["name"], name: "index_enterprises_on_name", using: :btree
@@ -112,6 +128,8 @@ ActiveRecord::Schema.define(version: 20161121100917) do
     t.datetime "updated_at",  null: false
   end
 
+  add_foreign_key "addresses", "districts"
+  add_foreign_key "enterprises", "addresses"
   add_foreign_key "enterprises", "enterprise_categories"
   add_foreign_key "enterprises", "entrepreneurs"
   add_foreign_key "enterprises", "industry_classifications", column: "primary_industry_classification_id"

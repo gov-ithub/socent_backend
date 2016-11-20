@@ -16,6 +16,7 @@ one:
   enterprise_category: category_0
   contact_name: Johann Strauss
   entrepreneur: one
+  address: one
 
 two:
   number: two
@@ -32,3 +33,4 @@ two:
   enterprise_category: category_1
   contact_name: We'll contact you
   entrepreneur: two
+  address: two
