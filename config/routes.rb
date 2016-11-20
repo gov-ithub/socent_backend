@@ -18,6 +18,9 @@ Rails.application.routes.draw do
         resources :social_intervention_domains,
             only: [:index, :show],
             path: 'social-intervention-domains'
+        resources :vulnerable_groups,
+            only: [:index, :show],
+            path: 'vulnerable-groups'
 
         resources :entrepreneurs, only: [:index, :show, :create, :update, :destroy]
 
