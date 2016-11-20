@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city: București
+  street: Piata Victoriei
+  street_number: 1
+  phone: 021 123 4567
+  fax: 021 123 4567
+  email: mail@example.com
+  district: one
+
+two:
+  city: București
+  street: Izvor
+  street_number: 2-4
+  phone: 021 123 4567
+  fax: 021 123 4567
+  email: mail@example.com
+  district: two
