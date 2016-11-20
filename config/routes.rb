@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     namespace :api do
       namespace :v1 do
         resources :districts, only: [:index, :show]
-        resources :addresses, only: [:show, :create]
+        resources :addresses, only: [:show, :create, :update]
         resources :industry_classifications,
             only: [:index, :show],
             path: 'industry-classifications'
