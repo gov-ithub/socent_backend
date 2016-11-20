@@ -10,6 +10,8 @@ module TableOrderConcern
     SocialInterventionDomainCategory,
     User,
     Organization,
-    District]
+    District,
+    VulnerableGroup
+  ]
 
 end

@@ -9,7 +9,7 @@ one:
   primary_industry_classification_clasz: '0111'
   secondary_industry_classifications: ['0113', '0115']
   social_intervention_domain: media
-  enterprise_category: one
+  enterprise_category: category_0
   contact_name: Johann Strauss
   entrepreneur: one
   organization: alba
@@ -23,7 +23,7 @@ two:
   primary_industry_classification_clasz: '0114'
   secondary_industry_classifications: ['0124', '0125']
   social_intervention_domain: history
-  enterprise_category: two
+  enterprise_category: category_1
   contact_name: We'll contact you
   entrepreneur: two
   organization: bucuresti
