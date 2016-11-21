@@ -16,4 +16,5 @@ class EnterpriseSerializer < ActiveModel::Serializer
   has_one :primary_industry_classification
   has_one :enterprise_category
   has_one :primary_social_intervention_domain
+  has_many :uploads
 end

@@ -3,7 +3,7 @@ class Enterprise < ApplicationRecord
   belongs_to :primary_social_intervention_domain, class_name: 'SocialInterventionDomain', optional: true
   belongs_to :enterprise_category, optional: true
   belongs_to :entrepreneur, optional: true
-  has_and_belongs_to_many :uploads
+  has_many :uploads
 
   validates :number, uniqueness: true, presence: true
   validates :application_date, presence: true

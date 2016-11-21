@@ -2,6 +2,7 @@ module TableOrderConcern
   extend ActiveSupport::Concern
 
   TABLE_ORDER = [
+    Upload,
     Enterprise,
     Entrepreneur,
     IndustryClassification,
@@ -9,8 +10,7 @@ module TableOrderConcern
     SocialInterventionDomain,
     SocialInterventionDomainCategory,
     District,
-    VulnerableGroup,
-    Upload
+    VulnerableGroup
   ]
 
 end

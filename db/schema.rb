@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161121112547) do
+ActiveRecord::Schema.define(version: 20161121100917) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,11 +56,6 @@ ActiveRecord::Schema.define(version: 20161121112547) do
     t.index ["unique_registration_code"], name: "index_enterprises_on_unique_registration_code", using: :btree
   end
 
-  create_table "enterprises_uploads", id: false, force: :cascade do |t|
-    t.integer "enterprise_id", null: false
-    t.integer "upload_id",     null: false
-  end
-
   create_table "entrepreneurs", force: :cascade do |t|
     t.string   "identification_number"
     t.string   "name"
@@ -101,10 +96,13 @@ ActiveRecord::Schema.define(version: 20161121112547) do
   end
 
   create_table "uploads", force: :cascade do |t|
-    t.text     "path"
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "enterprise_id",              null: false
+    t.string   "path",          limit: 1024, null: false
+    t.string   "name",                       null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+    t.index ["enterprise_id", "name"], name: "index_uploads_on_enterprise_id_and_name", unique: true, using: :btree
+    t.index ["enterprise_id"], name: "index_uploads_on_enterprise_id", using: :btree
   end
 
   create_table "vulnerable_groups", force: :cascade do |t|
@@ -119,4 +117,5 @@ ActiveRecord::Schema.define(version: 20161121112547) do
   add_foreign_key "enterprises", "industry_classifications", column: "primary_industry_classification_id"
   add_foreign_key "enterprises", "social_intervention_domains", column: "primary_social_intervention_domain_id"
   add_foreign_key "social_intervention_domains", "social_intervention_domain_categories"
+  add_foreign_key "uploads", "enterprises"
 end
