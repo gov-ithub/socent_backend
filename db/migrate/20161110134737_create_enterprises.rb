@@ -3,7 +3,10 @@ class CreateEnterprises < ActiveRecord::Migration[5.0]
     create_table :enterprises do |t|
       t.string :number, null: false
       t.string :name, null: false
-      t.string :tax_registration_code
+      t.integer :certificate_type
+      t.string :unique_registration_code
+      t.string :tax_registration_by
+      t.string :tax_registration_number
       t.date :application_date, null: false
       t.date :founded_at
       t.references :primary_industry_classification,
@@ -22,6 +25,6 @@ class CreateEnterprises < ActiveRecord::Migration[5.0]
     end
     add_index :enterprises, :number, unique: true
     add_index :enterprises, :name
-    add_index :enterprises, :tax_registration_code
+    add_index :enterprises, :unique_registration_code
   end
 end

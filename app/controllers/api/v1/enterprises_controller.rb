@@ -41,9 +41,12 @@ class Api::V1::EnterprisesController < ApplicationController
     #ActiveModelSerializers::Deserialization.jsonapi_parse(
     params.permit(
         :number,
+        :certificate_type,
         :name,
         :application_date,
-        :tax_registration_code,
+        :unique_registration_code,
+        :tax_registration_by,
+        :tax_registration_number,
         :founded_at,
         :contact_name,
         :entrepreneur_id,
@@ -57,7 +60,10 @@ class Api::V1::EnterprisesController < ApplicationController
   def update_params
     params.permit(
         :name,
-        :tax_registration_code,
+        :certificate_type,
+        :unique_registration_code,
+        :tax_registration_by,
+        :tax_registration_number,
         :founded_at,
         :contact_name,
         :entrepreneur_id,

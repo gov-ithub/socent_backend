@@ -31,7 +31,10 @@ ActiveRecord::Schema.define(version: 20161121112547) do
   create_table "enterprises", force: :cascade do |t|
     t.string   "number",                                            null: false
     t.string   "name",                                              null: false
-    t.string   "tax_registration_code"
+    t.integer  "certificate_type"
+    t.string   "unique_registration_code"
+    t.string   "tax_registration_by"
+    t.string   "tax_registration_number"
     t.date     "application_date",                                  null: false
     t.date     "founded_at"
     t.integer  "primary_industry_classification_id"
@@ -52,7 +55,7 @@ ActiveRecord::Schema.define(version: 20161121112547) do
     t.index ["primary_industry_classification_id"], name: "index_enterprises_on_primary_industry_classification_id", using: :btree
     t.index ["primary_social_intervention_domain_id"], name: "index_enterprises_on_primary_social_intervention_domain_id", using: :btree
     t.index ["social_intervention_domain_id"], name: "index_enterprises_on_social_intervention_domain_id", using: :btree
-    t.index ["tax_registration_code"], name: "index_enterprises_on_tax_registration_code", using: :btree
+    t.index ["unique_registration_code"], name: "index_enterprises_on_unique_registration_code", using: :btree
   end
 
   create_table "enterprises_uploads", id: false, force: :cascade do |t|
