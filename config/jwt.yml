@@ -1,0 +1,14 @@
+common: &common
+  algorithm: 'HS256'
+  secret: <%= Rails.application.secrets.secret_key_base %>
+  duration: <%= 24*60*60 %>
+  leeway: 30
+
+development:
+  <<: *common
+
+test:
+  <<: *common
+
+production:
+  <<: *common
