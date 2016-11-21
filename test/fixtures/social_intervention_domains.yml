@@ -7,3 +7,7 @@ one:
 two:
   description: Oh my! It moved!
   social_intervention_domain_category: two
+
+three:
+  description: There is no black dog here
+  social_intervention_domain_category: two

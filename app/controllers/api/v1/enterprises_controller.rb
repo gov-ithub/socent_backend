@@ -12,7 +12,7 @@ class Api::V1::EnterprisesController < ApplicationController
         :primary_industry_classification,
         :enterprise_category,
         :entrepreneur,
-        :social_intervention_domain)
+        :primary_social_intervention_domain)
   end
 
   def create
@@ -49,8 +49,9 @@ class Api::V1::EnterprisesController < ApplicationController
         :entrepreneur_id,
         :primary_industry_classification_id,
         :enterprise_category_id,
-        :social_intervention_domain_id,
-        :industry_classifications)
+        :primary_social_intervention_domain_id,
+        :industry_classifications,
+        :secondary_social_intervention_domains)
   end
 
   def update_params
@@ -62,8 +63,9 @@ class Api::V1::EnterprisesController < ApplicationController
         :entrepreneur_id,
         :primary_industry_classification_id,
         :enterprise_category_id,
-        :social_intervention_domain_id,
-        :industry_classifications)
+        :primary_social_intervention_domain_id,
+        :industry_classifications,
+        :secondary_social_intervention_domains)
   end
 
   def set_enterprise
