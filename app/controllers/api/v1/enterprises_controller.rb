@@ -54,7 +54,8 @@ class Api::V1::EnterprisesController < ApplicationController
         :enterprise_category_id,
         :primary_social_intervention_domain_id,
         :industry_classifications,
-        :secondary_social_intervention_domains)
+        :secondary_social_intervention_domains,
+        :uploads)
   end
 
   def update_params
@@ -71,7 +72,8 @@ class Api::V1::EnterprisesController < ApplicationController
         :enterprise_category_id,
         :primary_social_intervention_domain_id,
         :industry_classifications,
-        :secondary_social_intervention_domains)
+        :secondary_social_intervention_domains,
+        :uploads)
   end
 
   def set_enterprise
