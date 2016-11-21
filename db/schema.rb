@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 20161121112547) do
     t.integer  "primary_industry_classification_id"
     t.string   "secondary_industry_classifications",                             array: true
     t.integer  "primary_social_intervention_domain_id"
-    t.integer  "social_intervention_domain_id"
     t.string   "secondary_social_intervention_domains",                          array: true
     t.integer  "enterprise_category_id"
     t.string   "contact_name"
@@ -54,7 +53,6 @@ ActiveRecord::Schema.define(version: 20161121112547) do
     t.index ["number"], name: "index_enterprises_on_number", unique: true, using: :btree
     t.index ["primary_industry_classification_id"], name: "index_enterprises_on_primary_industry_classification_id", using: :btree
     t.index ["primary_social_intervention_domain_id"], name: "index_enterprises_on_primary_social_intervention_domain_id", using: :btree
-    t.index ["social_intervention_domain_id"], name: "index_enterprises_on_social_intervention_domain_id", using: :btree
     t.index ["unique_registration_code"], name: "index_enterprises_on_unique_registration_code", using: :btree
   end
 
@@ -119,7 +117,6 @@ ActiveRecord::Schema.define(version: 20161121112547) do
   add_foreign_key "enterprises", "enterprise_categories"
   add_foreign_key "enterprises", "entrepreneurs"
   add_foreign_key "enterprises", "industry_classifications", column: "primary_industry_classification_id"
-  add_foreign_key "enterprises", "social_intervention_domains"
   add_foreign_key "enterprises", "social_intervention_domains", column: "primary_social_intervention_domain_id"
   add_foreign_key "social_intervention_domains", "social_intervention_domain_categories"
 end

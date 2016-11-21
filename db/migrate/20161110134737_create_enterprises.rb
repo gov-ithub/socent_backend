@@ -14,7 +14,6 @@ class CreateEnterprises < ActiveRecord::Migration[5.0]
       t.string :secondary_industry_classifications, array: true
       t.references :primary_social_intervention_domain,
           foreign_key: {to_table: :social_intervention_domains}
-      t.references :social_intervention_domain, foreign_key: true
       t.string :secondary_social_intervention_domains, array: true
       t.references :enterprise_category, foreign_key: true
       t.string :contact_name
