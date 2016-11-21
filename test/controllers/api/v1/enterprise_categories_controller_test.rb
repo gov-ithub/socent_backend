@@ -7,7 +7,7 @@ class Api::V1::EnterpriseCategoriesControllerTest < ActionDispatch::IntegrationT
   end
 
   test "should get show" do
-    enterprise_category = enterprise_categories(:one)
+    enterprise_category = enterprise_categories(:category_0)
     get api_v1_enterprise_category_url(enterprise_category)
     assert_response :success
   end

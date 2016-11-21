@@ -7,7 +7,7 @@ class Api::V1::VulnerableGroupsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get show" do
-    vulnerable_group = vulnerable_groups(:one)
+    vulnerable_group = vulnerable_groups(:poor)
     get api_v1_vulnerable_group_url(vulnerable_group)
     assert_response :success
   end

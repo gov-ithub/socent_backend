@@ -12,7 +12,7 @@ one:
   primary_industry_classification_clasz: '0111'
   secondary_industry_classifications: ['0113', '0115']
   primary_social_intervention_domain: media
-  secondary_social_intervention_domains: [continuing_education, university]
+  secondary_social_intervention_domains: [<%= Zlib.crc32(:history.to_s) %>, <%= Zlib.crc32(:museums.to_s) %>]
   enterprise_category: category_0
   contact_name: Johann Strauss
   entrepreneur: one
@@ -29,8 +29,7 @@ two:
   founded_at: 2016-11-10
   primary_industry_classification_clasz: '0114'
   secondary_industry_classifications: ['0124', '0125']
-  social_intervention_domain: history
-  secondary_social_intervention_domains: [museums, leisure_time_and_tourism ]
+  primary_social_intervention_domain: history
   enterprise_category: category_1
   contact_name: We'll contact you
   entrepreneur: two
