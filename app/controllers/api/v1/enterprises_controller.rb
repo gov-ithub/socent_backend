@@ -15,7 +15,7 @@ class Api::V1::EnterprisesController < ApplicationController
         :primary_industry_classification,
         :enterprise_category,
         :entrepreneur,
-        :social_intervention_domain)
+        :primary_social_intervention_domain)
   end
 
   def create
@@ -44,29 +44,39 @@ class Api::V1::EnterprisesController < ApplicationController
     #ActiveModelSerializers::Deserialization.jsonapi_parse(
     params.permit(
         :number,
+        :certificate_type,
         :name,
         :application_date,
-        :tax_registration_code,
+        :unique_registration_code,
+        :tax_registration_by,
+        :tax_registration_number,
         :founded_at,
         :contact_name,
         :entrepreneur_id,
         :primary_industry_classification_id,
         :enterprise_category_id,
-        :social_intervention_domain_id,
-        :industry_classifications)
+        :primary_social_intervention_domain_id,
+        :industry_classifications,
+        :secondary_social_intervention_domains,
+        :uploads)
   end
 
   def update_params
     params.permit(
         :name,
-        :tax_registration_code,
+        :certificate_type,
+        :unique_registration_code,
+        :tax_registration_by,
+        :tax_registration_number,
         :founded_at,
         :contact_name,
         :entrepreneur_id,
         :primary_industry_classification_id,
         :enterprise_category_id,
-        :social_intervention_domain_id,
-        :industry_classifications)
+        :primary_social_intervention_domain_id,
+        :industry_classifications,
+        :secondary_social_intervention_domains,
+        :uploads)
   end
 
   def set_enterprise

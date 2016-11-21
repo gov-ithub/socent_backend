@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  enterprise: one
+  path: /path/to/file
+  name: fileone
+
+two:
+  enterprise: two
+  path: /path/to/file
+  name: filetwo
+
+three:
+  enterprise: one
+  path: /path/to/file
+  name: filetwo
