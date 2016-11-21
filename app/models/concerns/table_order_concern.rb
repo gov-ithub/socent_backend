@@ -9,7 +9,8 @@ module TableOrderConcern
     SocialInterventionDomain,
     SocialInterventionDomainCategory,
     District,
-    VulnerableGroup
+    VulnerableGroup,
+    Upload
   ]
 
 end

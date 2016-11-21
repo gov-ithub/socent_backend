@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161121100917) do
+ActiveRecord::Schema.define(version: 20161121112547) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,6 +53,11 @@ ActiveRecord::Schema.define(version: 20161121100917) do
     t.index ["primary_social_intervention_domain_id"], name: "index_enterprises_on_primary_social_intervention_domain_id", using: :btree
     t.index ["social_intervention_domain_id"], name: "index_enterprises_on_social_intervention_domain_id", using: :btree
     t.index ["tax_registration_code"], name: "index_enterprises_on_tax_registration_code", using: :btree
+  end
+
+  create_table "enterprises_uploads", id: false, force: :cascade do |t|
+    t.integer "enterprise_id", null: false
+    t.integer "upload_id",     null: false
   end
 
   create_table "entrepreneurs", force: :cascade do |t|
