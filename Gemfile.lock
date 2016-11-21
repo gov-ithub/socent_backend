@@ -150,6 +150,7 @@ DEPENDENCIES
   byebug
   dotenv-rails
   email_validator
+  jwt
   knock (~> 1.4.2)
   listen (~> 3.0.5)
   pg (~> 0.18)

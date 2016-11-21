@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       defaults: {format: :json} do
     namespace :api do
       namespace :v1 do
+        resource :login, only: [:create]
         resources :districts, only: [:index, :show]
         resources :industry_classifications,
             only: [:index, :show],
