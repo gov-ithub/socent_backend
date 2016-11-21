@@ -3,35 +3,32 @@
 one:
   number: One
   name: SC Societatea Comerciala SRL
+  application_date: 2016-11-10
   certificate_type: 0
   unique_registration_code: CUI-0
   tax_registration_by: 1234
   tax_registration_number: J12/1234/1234
-  application_date: 2016-11-10
   founded_at: 2016-11-10
-  primary_industry_classification: one
-  secondary_industry_classifications: [two, three]
-  primary_social_intervention_domain: one
-  secondary_social_intervention_domains: [two, three]
-  enterprise_category: one
+  primary_industry_classification: clasz_0111
+  secondary_industry_classifications: [0113, 0115]
+  primary_social_intervention_domain: media
+  secondary_social_intervention_domains: [<%= Zlib.crc32(:history.to_s) %>, <%= Zlib.crc32(:museums.to_s) %>]
+  enterprise_category: category_0
   contact_name: Johann Strauss
   entrepreneur: one
-  uploads: [one, two]
 
 two:
   number: two
   name: Ion Ionut Ionel PFA
+  application_date: 2016-11-09
   certificate_type: 1
   unique_registration_code: CUI-1
   tax_registration_by: 1234
   tax_registration_number: J12/1234/1234
-  application_date: 2016-11-10
   founded_at: 2016-11-10
-  primary_industry_classification: two
-  secondary_industry_classifications: [four, five]
-  primary_social_intervention_domain: two
-  secondary_social_intervention_domains: [one, three]
-  enterprise_category: two
+  primary_industry_classification: clasz_0114
+  secondary_industry_classifications: [0124, 0125]
+  primary_social_intervention_domain: history
+  enterprise_category: category_1
   contact_name: We'll contact you
   entrepreneur: two
-  uploads: [one, two]

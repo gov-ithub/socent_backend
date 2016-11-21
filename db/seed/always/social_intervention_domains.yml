@@ -12,15 +12,15 @@ history:
   social_intervention_domain_category: culture_arts_sports
 
 museums:
-  :description: Muzee
+  description: Muzee
   social_intervention_domain_category: culture_arts_sports
 
 sports:
-  :description: Sport
+  description: Sport
   social_intervention_domain_category: culture_arts_sports
 
 leisure_time_and_tourism:
-  :description: Timp liber, turism
+  description: Timp liber, turism
   social_intervention_domain_category: culture_arts_sports
 
 preschool:
