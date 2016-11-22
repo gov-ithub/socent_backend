@@ -5,6 +5,7 @@ class Enterprise < ApplicationRecord
   belongs_to :entrepreneur, optional: true
   has_many :uploads, dependent: :delete_all
   belongs_to :headquarters, inverse_of: :enterprises, class_name: 'Address', optional: true
+  has_many :work_locations, inverse_of: :enterprise, class_name: 'Address', dependent: :delete_all
 
   validates :number, uniqueness: true, presence: true
   validates :application_date, presence: true

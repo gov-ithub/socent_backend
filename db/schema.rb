@@ -24,9 +24,11 @@ ActiveRecord::Schema.define(version: 20161121100917) do
     t.string   "fax"
     t.string   "email"
     t.string   "website"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.integer  "enterprise_id"
     t.index ["district_id"], name: "index_addresses_on_district_id", using: :btree
+    t.index ["enterprise_id"], name: "index_addresses_on_enterprise_id", using: :btree
   end
 
   create_table "districts", force: :cascade do |t|
@@ -129,6 +131,7 @@ ActiveRecord::Schema.define(version: 20161121100917) do
   end
 
   add_foreign_key "addresses", "districts"
+  add_foreign_key "addresses", "enterprises"
   add_foreign_key "enterprises", "addresses", column: "headquarters_id"
   add_foreign_key "enterprises", "enterprise_categories"
   add_foreign_key "enterprises", "entrepreneurs"
