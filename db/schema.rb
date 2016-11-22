@@ -61,10 +61,10 @@ ActiveRecord::Schema.define(version: 20161121100917) do
     t.integer  "status",                                default: 0, null: false
     t.datetime "created_at",                                        null: false
     t.datetime "updated_at",                                        null: false
-    t.integer  "address_id"
-    t.index ["address_id"], name: "index_enterprises_on_address_id", using: :btree
+    t.integer  "headquarters_id"
     t.index ["enterprise_category_id"], name: "index_enterprises_on_enterprise_category_id", using: :btree
     t.index ["entrepreneur_id"], name: "index_enterprises_on_entrepreneur_id", using: :btree
+    t.index ["headquarters_id"], name: "index_enterprises_on_headquarters_id", using: :btree
     t.index ["name"], name: "index_enterprises_on_name", using: :btree
     t.index ["number"], name: "index_enterprises_on_number", unique: true, using: :btree
     t.index ["primary_industry_classification_id"], name: "index_enterprises_on_primary_industry_classification_id", using: :btree
@@ -129,7 +129,7 @@ ActiveRecord::Schema.define(version: 20161121100917) do
   end
 
   add_foreign_key "addresses", "districts"
-  add_foreign_key "enterprises", "addresses"
+  add_foreign_key "enterprises", "addresses", column: "headquarters_id"
   add_foreign_key "enterprises", "enterprise_categories"
   add_foreign_key "enterprises", "entrepreneurs"
   add_foreign_key "enterprises", "industry_classifications", column: "primary_industry_classification_id"
