@@ -24,11 +24,13 @@ ActiveRecord::Schema.define(version: 20161121100917) do
     t.string   "fax"
     t.string   "email"
     t.string   "website"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-    t.integer  "enterprise_id"
+    t.integer  "headquarters_for_enterprise_id"
+    t.integer  "work_location_for_enterprise_id"
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
     t.index ["district_id"], name: "index_addresses_on_district_id", using: :btree
-    t.index ["enterprise_id"], name: "index_addresses_on_enterprise_id", using: :btree
+    t.index ["headquarters_for_enterprise_id"], name: "index_addresses_on_headquarters_for_enterprise_id", using: :btree
+    t.index ["work_location_for_enterprise_id"], name: "index_addresses_on_work_location_for_enterprise_id", using: :btree
   end
 
   create_table "districts", force: :cascade do |t|
@@ -63,10 +65,8 @@ ActiveRecord::Schema.define(version: 20161121100917) do
     t.integer  "status",                                default: 0, null: false
     t.datetime "created_at",                                        null: false
     t.datetime "updated_at",                                        null: false
-    t.integer  "headquarters_id"
     t.index ["enterprise_category_id"], name: "index_enterprises_on_enterprise_category_id", using: :btree
     t.index ["entrepreneur_id"], name: "index_enterprises_on_entrepreneur_id", using: :btree
-    t.index ["headquarters_id"], name: "index_enterprises_on_headquarters_id", using: :btree
     t.index ["name"], name: "index_enterprises_on_name", using: :btree
     t.index ["number"], name: "index_enterprises_on_number", unique: true, using: :btree
     t.index ["primary_industry_classification_id"], name: "index_enterprises_on_primary_industry_classification_id", using: :btree
@@ -131,8 +131,8 @@ ActiveRecord::Schema.define(version: 20161121100917) do
   end
 
   add_foreign_key "addresses", "districts"
-  add_foreign_key "addresses", "enterprises"
-  add_foreign_key "enterprises", "addresses", column: "headquarters_id"
+  add_foreign_key "addresses", "enterprises", column: "headquarters_for_enterprise_id"
+  add_foreign_key "addresses", "enterprises", column: "work_location_for_enterprise_id"
   add_foreign_key "enterprises", "enterprise_categories"
   add_foreign_key "enterprises", "entrepreneurs"
   add_foreign_key "enterprises", "industry_classifications", column: "primary_industry_classification_id"

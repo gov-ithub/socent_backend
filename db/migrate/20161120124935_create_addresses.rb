@@ -10,6 +10,9 @@ class CreateAddresses < ActiveRecord::Migration[5.0]
       t.string :email
       t.string :website
 
+      t.belongs_to :headquarters_for_enterprise, foreign_key: { to_table: :enterprises }
+      t.belongs_to :work_location_for_enterprise, foreign_key: { to_table: :enterprises }
+
       t.timestamps
     end
   end
