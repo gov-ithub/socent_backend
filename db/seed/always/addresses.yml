@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  district: bucuresti
+  city: București
+  address: Piata Victoriei Nr. 1
+  phone: 021 123 4567
+  fax: 021 123 4567
+  zipcode: 011791
+  email: 'mail@example.com'
+  website: 'www.example.com'
+
+two:
+  district: bucuresti
+  city: București
+  address: Str. Izvor 2-4
+  phone: 021 123 4567
+  fax: 021 123 4567
+  zipcode: 011791
+  email: 'mail@example.com'
+  website: 'www.example.com'

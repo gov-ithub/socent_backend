@@ -9,6 +9,7 @@ module TableOrderConcern
     EnterpriseCategory,
     SocialInterventionDomain,
     SocialInterventionDomainCategory,
+    Address,
     District,
     VulnerableGroup
   ]
