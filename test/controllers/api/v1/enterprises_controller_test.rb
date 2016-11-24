@@ -20,8 +20,7 @@ class Api::V1::EnterprisesControllerTest < ActionDispatch::IntegrationTest
       post api_v1_enterprises_url, params: {
         name: 'foo',
         number: 'bar',
-        application_date: Date.today},
-        headers: auth_header
+        application_date: Date.today}
       assert_response :created
     end
   end
@@ -38,8 +37,7 @@ class Api::V1::EnterprisesControllerTest < ActionDispatch::IntegrationTest
     enterprise = enterprises(:one)
     assert_no_difference 'Enterprise.count' do
       patch api_v1_enterprise_url(enterprise),
-        params: {name: 'updated'},
-        headers: auth_header
+        params: {name: 'updated'}
       assert_response :success
       enterprise.reload
       assert_equal 'updated', enterprise.name

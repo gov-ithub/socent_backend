@@ -41,9 +41,16 @@ class ActiveRecord::FixtureSet
   end
 end
 
+# This module provides an easy to use authorization handler for controller tests
+# ```
+#  class SomeControllerTest < ActionDispatch::IntegrationTest
+#     include TestLoginConcern
+#     authorize :someuser
+# ```
+# will append a valid JWT token for users' test fixture `:someuser` to every request
+# see to https://github.com/rails/rails/blob/master/actionpack/lib/action_dispatch/testing/integration.rb
 module TestLoginConcern
   extend ActiveSupport::Concern
-
 
   included do |base|
 
@@ -52,7 +59,6 @@ module TestLoginConcern
 
       define_method(method) do |path, **args|
         args[:headers] = (args[:headers] || {}).merge self.auth_header
-        Rails.logger.info "#{method} #{args.inspect}"
         send("original_#{method}", path, **args)
       end
     end
@@ -68,10 +74,7 @@ module TestLoginConcern
       define_method(:auth_header) do
         {authorization: "Token #{@token.token}"}
       end
-
     end
-
   end
-
 end
 
