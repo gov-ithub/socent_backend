@@ -1,6 +1,9 @@
 require 'test_helper'
 
 class Api::V1::EntrepreneursControllerTest < ActionDispatch::IntegrationTest
+  include TestLoginConcern
+  authorize :one
+  
   test "should get show" do
     entrepreneur = entrepreneurs(:one)
     get api_v1_entrepreneur_url(entrepreneur)

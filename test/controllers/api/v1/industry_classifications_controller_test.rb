@@ -1,6 +1,9 @@
 require 'test_helper'
 
 class Api::V1::IndustryClassificationsControllerTest < ActionDispatch::IntegrationTest
+  include TestLoginConcern
+  authorize :one
+  
   test "should get index" do
     get api_v1_industry_classifications_url
     assert_response :success

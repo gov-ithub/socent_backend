@@ -9,7 +9,7 @@ class Api::V1::LoginController < ApplicationController
     if user.nil? or !user.is_password_match?(lp[:password])
       head :unauthorized
     else
-      @token = create_token(user)
+      @token = LoginConcern.create_token(user)
       respond_with @token, location: nil, status: :created
     end
   end

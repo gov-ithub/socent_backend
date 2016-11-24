@@ -1,4 +1,6 @@
 class Api::V1::VulnerableGroupsController < ApplicationController
+  include LoginConcern
+  authorization_required
   respond_to :json
 
   def index

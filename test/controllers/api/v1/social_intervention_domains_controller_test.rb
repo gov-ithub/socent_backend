@@ -1,6 +1,9 @@
 require 'test_helper'
 
 class Api::V1::SocialInterventionDomainsControllerTest < ActionDispatch::IntegrationTest
+  include TestLoginConcern
+  authorize :one
+  
   test "should get show" do
     sid = social_intervention_domains(:media)
     get api_v1_social_intervention_domain_url(sid)

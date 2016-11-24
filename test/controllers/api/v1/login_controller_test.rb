@@ -1,6 +1,9 @@
 require 'test_helper'
 
 class Api::V1::LoginControllerTest < ActionDispatch::IntegrationTest
+  include TestLoginConcern
+  authorize :one
+  
 
   test "should post return valid user token" do
     user = users(:one)

@@ -13,7 +13,6 @@ class ActiveSupport::TestCase
       yield
     end
   end
-
 end
 
 # PSQL FKs require superuser to disable constraints
@@ -41,3 +40,38 @@ class ActiveRecord::FixtureSet
     orig_create_fixtures f_dir, fs_names, *args
   end
 end
+
+module TestLoginConcern
+  extend ActiveSupport::Concern
+
+
+  included do |base|
+
+    %w(get post patch put head delete).each do |method|
+      alias_method "original_#{method}", method
+
+      define_method(method) do |path, **args|
+        args[:headers] = (args[:headers] || {}).merge self.auth_header
+        Rails.logger.info "#{method} #{args.inspect}"
+        send("original_#{method}", path, **args)
+      end
+    end
+  end
+
+  module ClassMethods
+
+    def authorize(user)
+      define_method(:setup) do
+        @token = LoginConcern.create_token(users(user))
+      end
+
+      define_method(:auth_header) do
+        {authorization: "Token #{@token.token}"}
+      end
+
+    end
+
+  end
+
+end
+

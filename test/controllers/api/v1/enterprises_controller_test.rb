@@ -1,11 +1,13 @@
 require 'test_helper'
 
 class Api::V1::EnterprisesControllerTest < ActionDispatch::IntegrationTest
+  include TestLoginConcern
+  authorize :one
+
   test "should get show" do
     enterprise = enterprises(:one)
     get api_v1_enterprise_url(enterprise)
     assert_response :success
-
   end
 
   test "should get index" do
@@ -18,7 +20,8 @@ class Api::V1::EnterprisesControllerTest < ActionDispatch::IntegrationTest
       post api_v1_enterprises_url, params: {
         name: 'foo',
         number: 'bar',
-        application_date: Date.today}
+        application_date: Date.today},
+        headers: auth_header
       assert_response :created
     end
   end
@@ -34,7 +37,9 @@ class Api::V1::EnterprisesControllerTest < ActionDispatch::IntegrationTest
   test "should patch update" do
     enterprise = enterprises(:one)
     assert_no_difference 'Enterprise.count' do
-      patch api_v1_enterprise_url(enterprise), params: {name: 'updated'}
+      patch api_v1_enterprise_url(enterprise),
+        params: {name: 'updated'},
+        headers: auth_header
       assert_response :success
       enterprise.reload
       assert_equal 'updated', enterprise.name

@@ -1,4 +1,7 @@
 class Api::V1::EnterpriseCategoriesController < ApplicationController
+  include LoginConcern
+  authorization_required
+  
   respond_to :json
 
   def index

@@ -1,5 +1,8 @@
 class Api::V1::EnterprisesController < ApplicationController
   include OrganizationScopedController
+  include LoginConcern
+
+  authorization_required
   organization_scoped
 
   respond_to :json

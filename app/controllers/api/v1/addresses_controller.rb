@@ -1,4 +1,7 @@
 class Api::V1::AddressesController < ApplicationController
+  include LoginConcern
+  authorization_required
+  
   respond_to :json
 
   before_action :set_address, only: [:show, :update, :destroy]
