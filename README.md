@@ -1,6 +1,7 @@
 # Registrul Unic de Evidenta a Intreprinderilor Sociale - BackEnd
 
 [![Travis build](https://travis-ci.org/gov-ithub/socent_backend.svg?branch=master)](https://travis-ci.org/gov-ithub/socent_backend)
+[![Code Climate](https://codeclimate.com/github/gov-ithub/socent_backend/badges/gpa.svg)](https://codeclimate.com/github/gov-ithub/socent_backend)
 
 # Instalare
 

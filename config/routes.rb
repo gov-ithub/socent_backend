@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       namespace :v1 do
         post 'login', to: 'login#create'
         resources :districts, only: [:index, :show]
+        resources :addresses, only: [:show, :create, :update, :destroy]
         resources :industry_classifications,
             only: [:index, :show],
             path: 'industry-classifications'

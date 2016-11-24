@@ -9,10 +9,11 @@ module TableOrderConcern
     EnterpriseCategory,
     SocialInterventionDomain,
     SocialInterventionDomainCategory,
-    User,
-    Organization,
+    Address,
     District,
-    VulnerableGroup
+    VulnerableGroup,
+    User,
+    Organization
   ]
 
 end
