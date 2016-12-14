@@ -22,6 +22,7 @@ gem 'active_model_serializers', git: 'https://github.com/rails-api/active_model_
 gem 'responders', '~> 2.0'
 gem 'email_validator'
 gem 'jwt'
+gem 'geocoder'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
